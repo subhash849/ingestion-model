@@ -20,10 +20,12 @@ Design notes:
 from __future__ import annotations
 import logging
 from pathlib import Path
-from groq import Groq
+from typing import Any
 
 from config import (
+    LLM_PROVIDER,
     GROQ_API_KEY,
+    OLLAMA_HOST,
     DOMAIN_CONFIDENCE_THRESHOLD,
     FALLBACK_DOMAIN,
 )
@@ -54,7 +56,7 @@ def _confidence_to_float(confidence: str) -> float:
 def process_document(
     doc_id: str,
     text: str,
-    client: Groq,
+    client: Any,
     domain_hint: str | None = None,
 ) -> DocumentResult:
     """
@@ -63,7 +65,7 @@ def process_document(
     Args:
         doc_id      : unique identifier for this document
         text        : raw extracted text (from PDF or plain input)
-        client      : Groq client instance
+        client      : Groq or Ollama client instance
         domain_hint : pre-resolved domain (from dataset cache), or None
 
     Returns:
@@ -189,7 +191,12 @@ def run_pipeline(payload: dict) -> dict:
     if not isinstance(documents, list) or not documents:
         raise ValueError("`documents` must be a non-empty list.")
 
-    client = Groq(api_key=GROQ_API_KEY)
+    if LLM_PROVIDER == "ollama":
+        import ollama
+        client = ollama.Client(host=OLLAMA_HOST)
+    else:
+        from groq import Groq
+        client = Groq(api_key=GROQ_API_KEY)
 
     # Check dataset-level domain cache
     cached_domain = _dataset_domain_cache.get(dataset_id)

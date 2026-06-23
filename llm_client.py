@@ -14,9 +14,10 @@ import json
 import re
 import time
 import logging
+from typing import Any
 from groq import Groq, APIError as GroqAPIError
 
-from config import GROQ_API_KEY, MODEL, MAX_TOKENS, DOMAIN_CATEGORIES, SUPPORTED_DOMAINS, FALLBACK_DOMAIN
+from config import LLM_PROVIDER, GROQ_MODEL, OLLAMA_MODEL, MAX_TOKENS, DOMAIN_CATEGORIES, SUPPORTED_DOMAINS, FALLBACK_DOMAIN
 from models import ChunkLLMResponse, GlossaryEntry, PYDANTIC_AVAILABLE
 
 logger = logging.getLogger(__name__)
@@ -103,7 +104,7 @@ Respond ONLY with a valid JSON object — no markdown fences, no prose:
 
 def call_llm_for_chunk(
     chunk: str,
-    client: Groq,
+    client: Any,
     domain_hint: str | None = None,
 ) -> ChunkLLMResponse | None:
     """
@@ -118,28 +119,41 @@ def call_llm_for_chunk(
     delay = _RETRY_BACKOFF
     for attempt in range(1, _MAX_RETRIES + 1):
         try:
-            response = client.chat.completions.create(
-                model=MODEL,
-                max_tokens=MAX_TOKENS,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user",   "content": user_message},
-                ],
-            )
-            raw = response.choices[0].message.content.strip()
-            return _parse_and_validate(raw)
+            if LLM_PROVIDER == "ollama":
+                response = client.chat(
+                    model=OLLAMA_MODEL,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user",   "content": user_message},
+                    ],
+                    format="json",
+                    options={"num_predict": MAX_TOKENS}
+                )
+                raw = response["message"]["content"].strip()
+                return _parse_and_validate(raw)
+            else:
+                response = client.chat.completions.create(
+                    model=GROQ_MODEL,
+                    max_tokens=MAX_TOKENS,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user",   "content": user_message},
+                    ],
+                )
+                raw = response.choices[0].message.content.strip()
+                return _parse_and_validate(raw)
 
-        except GroqAPIError as exc:
+        except Exception as exc:
             status = getattr(exc, "status_code", None)
             if status in (429, 503) and attempt < _MAX_RETRIES:
                 logger.warning(
-                    "Groq API %s error (attempt %d/%d), retrying in %.1fs",
+                    "API %s error (attempt %d/%d), retrying in %.1fs",
                     status, attempt, _MAX_RETRIES, delay,
                 )
                 time.sleep(delay)
                 delay *= 2
                 continue
-            logger.error("Groq API error (attempt %d/%d): %s", attempt, _MAX_RETRIES, exc)
+            logger.error("API error (attempt %d/%d): %s", attempt, _MAX_RETRIES, exc)
             return None
 
     return None
