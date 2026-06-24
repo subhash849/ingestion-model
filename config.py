@@ -7,7 +7,9 @@ All tuneable constants live here. Nothing else imports from sibling modules.
 # LLM
 # ---------------------------------------------------------------------------
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "groq")  # "groq" or "ollama"
 
