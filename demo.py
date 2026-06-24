@@ -149,7 +149,7 @@ def run_demo():
             assert defn,  f"FAIL: term '{term}' has empty definition"
             assert cat,   f"FAIL: term '{term}' has empty category"
 
-    print("\n✅ All assertions passed.")
+    print("\n All assertions passed.")
 
 
 if __name__ == "__main__":

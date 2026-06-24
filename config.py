@@ -6,19 +6,11 @@ All tuneable constants live here. Nothing else imports from sibling modules.
 # ---------------------------------------------------------------------------
 # LLM
 # ---------------------------------------------------------------------------
+
 import os
 
-
-LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "groq")  # "groq" or "ollama"
-
-# Groq Config
-GROQ_API_KEY  = os.environ.get("GROQ_API_KEY", "")
-GROQ_MODEL    = "llama-3.1-8b-instant"
-
-# Ollama Config
-OLLAMA_HOST   = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-OLLAMA_MODEL  = os.environ.get("OLLAMA_MODEL", "phi4-mini:latest")
-
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+MODEL         = "llama-3.1-8b-instant"
 MAX_TOKENS    = 2048
 
 # ---------------------------------------------------------------------------
@@ -33,6 +25,7 @@ CHUNK_OVERLAP     = 1     # number of paragraphs to repeat at chunk boundaries
 # ---------------------------------------------------------------------------
 
 DOMAIN_CONFIDENCE_THRESHOLD = 0.6   # below this → fall back to "general"
+DOMAIN_DETECTION_CHUNKS     = 3     # vote across first N chunks before locking domain
 
 # Supported domains and their category lists.
 # Add a new domain here — the rest of the pipeline picks it up automatically.

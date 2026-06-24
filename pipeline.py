@@ -1,32 +1,17 @@
 """
 pipeline.py — Orchestrates the full glossary extraction pipeline.
-
-Flow per document:
-  PDF/text → preprocess → chunk → LLM (per chunk) → aggregate → postprocess
-
-Flow per dataset:
-  N documents → per-file pipeline → dataset result
-
-Design notes:
-  - Domain is detected in the FIRST chunk of each file, then cached for
-    subsequent chunks (avoids repeated detection calls)
-  - If first-chunk confidence < threshold → fallback to "general" for ALL chunks
-  - Dataset-level domain cache: if a dataset_id is re-processed, we skip
-    re-detection and reuse previously resolved domain
-  - Each document fails independently — one bad PDF never blocks the batch
-  - Cost tracking: token usage logged per document
 """
 
 from __future__ import annotations
 import logging
+from typing import Optional
 from pathlib import Path
-from typing import Any
+from groq import Groq
 
 from config import (
-    LLM_PROVIDER,
     GROQ_API_KEY,
-    OLLAMA_HOST,
     DOMAIN_CONFIDENCE_THRESHOLD,
+    DOMAIN_DETECTION_CHUNKS,
     FALLBACK_DOMAIN,
 )
 from pdf_reader import extract_text_from_pdf
@@ -37,11 +22,6 @@ from models import DocumentResult, DatasetResult
 
 logger = logging.getLogger(__name__)
 
-# ---------------------------------------------------------------------------
-# Dataset-level domain cache
-# { dataset_id: detected_domain }
-# Persists across multiple calls within the same process session.
-# ---------------------------------------------------------------------------
 _dataset_domain_cache: dict[str, str] = {}
 
 
@@ -49,31 +29,45 @@ def _confidence_to_float(confidence: str) -> float:
     return {"high": 0.9, "medium": 0.65, "low": 0.3}.get(confidence, 0.0)
 
 
-# ---------------------------------------------------------------------------
-# Single document processor
-# ---------------------------------------------------------------------------
+def _majority_domain(votes: list[tuple[str, str]]) -> tuple[str, str]:
+    """
+    Pick the domain that appears most frequently across votes.
+    Weighted by confidence: high=3, medium=2, low=1.
+    Falls back to FALLBACK_DOMAIN if no vote clears DOMAIN_CONFIDENCE_THRESHOLD.
+    """
+    weights = {"high": 3, "medium": 2, "low": 1}
+    scores: dict[str, float] = {}
+    for domain, confidence in votes:
+        scores[domain] = scores.get(domain, 0) + weights.get(confidence, 1)
+
+    if not scores:
+        return FALLBACK_DOMAIN, "low"
+
+    best_domain = max(scores, key=lambda d: scores[d])
+
+    # Find the highest confidence vote for the winning domain
+    best_conf = "low"
+    for domain, confidence in votes:
+        if domain == best_domain:
+            if _confidence_to_float(confidence) > _confidence_to_float(best_conf):
+                best_conf = confidence
+
+    # Reject if best domain never got a confident vote
+    if _confidence_to_float(best_conf) < DOMAIN_CONFIDENCE_THRESHOLD:
+        return FALLBACK_DOMAIN, "low"
+
+    return best_domain, best_conf
+
 
 def process_document(
     doc_id: str,
     text: str,
-    client: Any,
-    domain_hint: str | None = None,
+    client: Groq,
+    domain_hint: Optional[str] = None,
 ) -> DocumentResult:
-    """
-    Run the full pipeline on pre-extracted text for one document.
 
-    Args:
-        doc_id      : unique identifier for this document
-        text        : raw extracted text (from PDF or plain input)
-        client      : Groq or Ollama client instance
-        domain_hint : pre-resolved domain (from dataset cache), or None
-
-    Returns:
-        DocumentResult with glossary, domain, confidence, and flags.
-    """
     logger.info("[%s] Starting processing", doc_id)
 
-    # ── Preprocess ──────────────────────────────────────────────────────────
     clean = preprocess(text)
     if not clean:
         logger.warning("[%s] Empty after preprocessing", doc_id)
@@ -83,7 +77,6 @@ def process_document(
             error="Document empty after preprocessing",
         )
 
-    # ── Chunk ────────────────────────────────────────────────────────────────
     chunks = chunk_text(clean)
     if not chunks:
         return DocumentResult(
@@ -94,14 +87,13 @@ def process_document(
 
     logger.info("[%s] %d chunks to process", doc_id, len(chunks))
 
-    # ── LLM extraction (per chunk) ────────────────────────────────────────
     all_entries: list[dict] = []
-    resolved_domain    = domain_hint or FALLBACK_DOMAIN
+    resolved_domain     = domain_hint or FALLBACK_DOMAIN
     resolved_confidence = "low"
-    domain_locked      = domain_hint is not None  # already known from cache
+    domain_locked       = domain_hint is not None
+    domain_votes: list[tuple[str, str]] = []
 
     for i, chunk in enumerate(chunks):
-        # Only detect domain from the first chunk (unless already provided)
         hint = resolved_domain if domain_locked else None
         response = call_llm_for_chunk(chunk, client, domain_hint=hint)
 
@@ -109,24 +101,30 @@ def process_document(
             logger.warning("[%s] Chunk %d/%d: LLM call failed, skipping", doc_id, i+1, len(chunks))
             continue
 
-        # Lock domain after first successful chunk response
+        # ── Domain voting: accumulate across first N chunks ─────────────────
         if not domain_locked:
-            conf_float = _confidence_to_float(response.confidence)
-            if conf_float >= DOMAIN_CONFIDENCE_THRESHOLD:
-                resolved_domain     = response.domain
-                resolved_confidence = response.confidence
-                domain_locked       = True
-                logger.info("[%s] Domain locked: %s (confidence=%s)", doc_id, resolved_domain, resolved_confidence)
-            else:
-                resolved_domain     = FALLBACK_DOMAIN
-                resolved_confidence = "low"
-                domain_locked       = True
-                logger.warning(
-                    "[%s] Low domain confidence (%s) → falling back to 'general'",
-                    doc_id, response.confidence,
-                )
+            domain_votes.append((response.domain, response.confidence))
+            logger.debug(
+                "[%s] Domain vote %d: %s (confidence=%s)",
+                doc_id, len(domain_votes), response.domain, response.confidence,
+            )
 
-        # Collect glossary entries as plain dicts for postprocessor
+            # Lock when enough votes collected OR last chunk reached
+            if len(domain_votes) >= DOMAIN_DETECTION_CHUNKS or i == len(chunks) - 1:
+                resolved_domain, resolved_confidence = _majority_domain(domain_votes)
+                domain_locked = True
+                if resolved_domain == FALLBACK_DOMAIN:
+                    logger.warning(
+                        "[%s] No confident domain from %d votes → 'general'",
+                        doc_id, len(domain_votes),
+                    )
+                else:
+                    logger.info(
+                        "[%s] Domain locked after %d votes: %s (confidence=%s)",
+                        doc_id, len(domain_votes), resolved_domain, resolved_confidence,
+                    )
+
+        # ── Collect entries ──────────────────────────────────────────────────
         for entry in response.glossary:
             if hasattr(entry, "model_dump"):
                 all_entries.append(entry.model_dump())
@@ -137,15 +135,13 @@ def process_document(
 
     logger.info("[%s] Collected %d raw entries across all chunks", doc_id, len(all_entries))
 
-    # ── Post-process ─────────────────────────────────────────────────────────
     final_glossary_dicts = postprocess(all_entries, resolved_domain)
 
-    # Convert back to GlossaryEntry objects for the result model
     from models import GlossaryEntry, PYDANTIC_AVAILABLE
     if PYDANTIC_AVAILABLE:
         glossary_objects = [GlossaryEntry(**e) for e in final_glossary_dicts]
     else:
-        glossary_objects = final_glossary_dicts  # type: ignore[assignment]
+        glossary_objects = final_glossary_dicts
 
     flagged = resolved_confidence == "low" or resolved_domain == FALLBACK_DOMAIN
 
@@ -163,42 +159,15 @@ def process_document(
     )
 
 
-# ---------------------------------------------------------------------------
-# Public API — batch entry point
-# ---------------------------------------------------------------------------
-
 def run_pipeline(payload: dict) -> dict:
-    """
-    Public entry point. Accepts PDF file paths OR pre-extracted text content.
-
-    Input schema:
-    {
-      "dataset_id": "string",
-      "documents": [
-        {
-          "doc_id":   "string",
-          "pdf_path": "path/to/file.pdf",   ← use this OR content
-          "content":  "raw text string"      ← use this OR pdf_path
-        }
-      ]
-    }
-
-    Output schema mirrors DatasetResult.
-    """
     dataset_id = payload.get("dataset_id", "default")
     documents  = payload.get("documents", [])
 
     if not isinstance(documents, list) or not documents:
         raise ValueError("`documents` must be a non-empty list.")
 
-    if LLM_PROVIDER == "ollama":
-        import ollama
-        client = ollama.Client(host=OLLAMA_HOST)
-    else:
-        from groq import Groq
-        client = Groq(api_key=GROQ_API_KEY)
+    client = Groq(api_key=GROQ_API_KEY)
 
-    # Check dataset-level domain cache
     cached_domain = _dataset_domain_cache.get(dataset_id)
     if cached_domain:
         logger.info("Dataset '%s': using cached domain '%s'", dataset_id, cached_domain)
@@ -210,7 +179,6 @@ def run_pipeline(payload: dict) -> dict:
         pdf_path = doc.get("pdf_path")
         content  = doc.get("content", "")
 
-        # ── Extract text ────────────────────────────────────────────────────
         if pdf_path:
             text, err = extract_text_from_pdf(pdf_path)
             if err:
@@ -230,7 +198,6 @@ def run_pipeline(payload: dict) -> dict:
             ))
             continue
 
-        # ── Process ─────────────────────────────────────────────────────────
         result = process_document(
             doc_id      = doc_id,
             text        = text,
@@ -239,7 +206,6 @@ def run_pipeline(payload: dict) -> dict:
         )
         results.append(result)
 
-        # Update dataset domain cache from first successful high-confidence doc
         if (
             dataset_id not in _dataset_domain_cache
             and not result.flagged
@@ -251,7 +217,6 @@ def run_pipeline(payload: dict) -> dict:
                 dataset_id, result.detected_domain,
             )
 
-    # ── Build dataset result ─────────────────────────────────────────────────
     dataset_result = DatasetResult(
         dataset_id      = dataset_id,
         results         = results,
@@ -260,7 +225,6 @@ def run_pipeline(payload: dict) -> dict:
         flagged_docs    = sum(1 for r in results if r.flagged),
     )
 
-    # Serialize to plain dict for JSON compatibility
     if hasattr(dataset_result, "model_dump"):
         return dataset_result.model_dump()
     elif hasattr(dataset_result, "dict"):
