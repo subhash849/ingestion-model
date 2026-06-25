@@ -22,8 +22,8 @@ from models import ChunkLLMResponse, GlossaryEntry, PYDANTIC_AVAILABLE
 
 logger = logging.getLogger(__name__)
 
-_MAX_RETRIES   = 3
-_RETRY_BACKOFF = 2.0   # seconds (doubles each retry)
+_MAX_RETRIES   = 5
+_RETRY_BACKOFF = 3.0   # seconds (doubles each retry)
 
 # ---------------------------------------------------------------------------
 # Prompt builder
@@ -87,13 +87,14 @@ Rules for glossary extraction:
 4. {category_instruction}
 5. If no valid domain terms exist, return an empty glossary list.
 6. {confidence_instruction}
+7. Include the 'page_number' where the term is found, based on the [Page X] markers in the text.
 
 Respond ONLY with a valid JSON object — no markdown fences, no prose:
 {{
   "domain": "detected_domain",
   "confidence": "high|medium|low",
   "glossary": [
-    {{"term": "string", "definition": "string", "category": "string"}}
+    {{"term": "string", "definition": "string", "category": "string", "page_number": "string"}}
   ]
 }}"""
 
@@ -145,14 +146,16 @@ def call_llm_for_chunk(
 
         except Exception as exc:
             status = getattr(exc, "status_code", None)
-            if status in (429, 503) and attempt < _MAX_RETRIES:
+            # Retry on 429, 503, or any connection/timeout errors (especially if Ollama crashes/restarts)
+            if attempt < _MAX_RETRIES:
                 logger.warning(
-                    "API %s error (attempt %d/%d), retrying in %.1fs",
-                    status, attempt, _MAX_RETRIES, delay,
+                    "API error (status=%s) (attempt %d/%d), retrying in %.1fs: %s",
+                    status, attempt, _MAX_RETRIES, delay, exc,
                 )
                 time.sleep(delay)
                 delay *= 2
                 continue
+
             logger.error("API error (attempt %d/%d): %s", attempt, _MAX_RETRIES, exc)
             return None
 

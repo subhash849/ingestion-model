@@ -129,11 +129,14 @@ def process_document(
         # Collect glossary entries as plain dicts for postprocessor
         for entry in response.glossary:
             if hasattr(entry, "model_dump"):
-                all_entries.append(entry.model_dump())
+                entry_dict = entry.model_dump()
             elif hasattr(entry, "dict"):
-                all_entries.append(entry.dict())
+                entry_dict = entry.dict()
             else:
-                all_entries.append(vars(entry))
+                entry_dict = vars(entry)
+            
+            entry_dict["chunk_number"] = i + 1
+            all_entries.append(entry_dict)
 
     logger.info("[%s] Collected %d raw entries across all chunks", doc_id, len(all_entries))
 

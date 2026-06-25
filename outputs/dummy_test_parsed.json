@@ -1,0 +1,64 @@
+{
+  "document_id": "dummy_test",
+  "source_file": "dummy_test.pdf",
+  "document_summary": "A brief test document covering key aviation operations procedures, including pre-flight boarding requirements, landing protocols, and emergency safety measures.",
+  "sections": [
+    {
+      "section_title": "Pre-Flight Procedures",
+      "section_summary": "Outlines the essential checks and requirements that must be completed before the aircraft takes off, covering both passenger and crew responsibilities.",
+      "page_number": "Page 1",
+      "subsections": [
+        {
+          "subsection_title": "Boarding Requirements",
+          "summary": "Specifies that a boarding pass is mandatory for all passengers before they may enter the aircraft.",
+          "key_points": [
+            "A boarding pass is required for all passengers",
+            "Verification must occur before passengers enter the aircraft"
+          ],
+          "page_number": "Page 1"
+        },
+        {
+          "subsection_title": "Cabin Security",
+          "summary": "Defines the flight crew's responsibility to confirm the cabin is secure prior to takeoff.",
+          "key_points": [
+            "The flight crew is responsible for cabin security",
+            "The cabin must be verified as secure before takeoff"
+          ],
+          "page_number": "Page 1"
+        }
+      ]
+    },
+    {
+      "section_title": "Landing Procedures",
+      "section_summary": "Describes the critical landing gear protocol that must be followed as the aircraft approaches touchdown.",
+      "page_number": "Page 2",
+      "subsections": [
+        {
+          "subsection_title": "Landing Gear Deployment",
+          "summary": "Mandates that the landing gear must be fully deployed before the aircraft touches down.",
+          "key_points": [
+            "The landing gear must be fully deployed",
+            "Deployment must be completed prior to touchdown"
+          ],
+          "page_number": "Page 2"
+        }
+      ]
+    },
+    {
+      "section_title": "Emergency Procedures",
+      "section_summary": "Covers in-flight emergency protocols, specifically regarding passenger oxygen supply.",
+      "page_number": "Page 2",
+      "subsections": [
+        {
+          "subsection_title": "Oxygen Mask Deployment",
+          "summary": "Describes the automatic deployment of oxygen masks from the ceiling during an in-flight emergency.",
+          "key_points": [
+            "Oxygen masks are deployed in case of emergency",
+            "Masks drop automatically from the ceiling"
+          ],
+          "page_number": "Page 2"
+        }
+      ]
+    }
+  ]
+}

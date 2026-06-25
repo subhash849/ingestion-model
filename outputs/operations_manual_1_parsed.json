@@ -1,0 +1,2603 @@
+{
+  "document_id": "operations_manual_1",
+  "source_file": "operations_manual_1.pdf",
+  "document_summary": "This document is the Horizon Airlines Operations Manual, covering organizational governance, operational control, passenger services, and related airline operational procedures. It establishes standardized procedures derived from FAA, ICAO, IATA, and NBAA guidance, and includes a detailed first section on governance and a beginning second section on passenger services.",
+  "sections": [
+    {
+      "section_title": "Operations Manual Section Index",
+      "section_summary": "A list of operational categories covered by the Horizon Airlines Operations Manual, outlining the major areas of airline operations addressed in subsequent sections.",
+      "page_number": "1",
+      "subsections": [
+        {
+          "subsection_title": "Listed Operational Domains",
+          "summary": "Enumerates the major domains of airline operations covered in the manual.",
+          "key_points": [
+            "Organization & Governance",
+            "Passenger Services (Check-In, Boarding, Baggage Handling)",
+            "Ground Operations (Aircraft Turnaround, Dispatch & Flight Planning)",
+            "OCC Operations and Crew Management",
+            "Safety Management System and Maintenance Coordination",
+            "Security Operations, Weather Disruptions, Delay & Cancellation Management",
+            "Emergency Response, Dangerous Goods, Training & Compliance"
+          ],
+          "page_number": "1"
+        }
+      ]
+    },
+    {
+      "section_title": "References and Source Attribution",
+      "section_summary": "Provides attributions and source materials for the development of the Horizon Airlines Operations Manual, noting it is an original knowledge base derived from recognized aviation authorities and industry organizations.",
+      "page_number": "2",
+      "subsections": [
+        {
+          "subsection_title": "Source Attribution Statement",
+          "summary": "Explains the origin of the manual as an original airline operations knowledge base intended to support operational personnel, RAG systems, decision support tools, training programs, and AI assistants. Notes that content is synthesized from industry standards rather than reproduced verbatim.",
+          "key_points": [
+            "Manual is original and intended for operational, RAG, training, and AI-assistant use",
+            "Derived from generally accepted aviation industry practices",
+            "Procedures must be reviewed against applicable regulations before live implementation",
+            "Horizon Airlines retains responsibility for adapting procedures to its specific environment"
+          ],
+          "page_number": "2"
+        },
+        {
+          "subsection_title": "Reference Materials",
+          "summary": "Lists the ten primary reference materials that served as foundational guidance for the manual's development.",
+          "key_points": [
+            "FAA Pilot's Handbook of Aeronautical Knowledge \u2013 Airport Operations",
+            "FAA Advisory Circular AC 120-71B \u2013 Standard Operating Procedures and Operational Guidance",
+            "ICAO Safety Management Manual (SMM) and Annexes/Operational Guidance",
+            "IATA Airport Handling Practices, Ground Operations Standards, and Dangerous Goods Regulations",
+            "NBAA Airplane Standard Operating Procedures Manual",
+            "UK Overseas Territories Aviation Circular (OTAC) Operations Manual Guidance",
+            "Publicly available airline operations manuals and aircraft manufacturer documentation"
+          ],
+          "page_number": "2-3"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 1: Organization, Governance & Operational Control",
+      "section_summary": "Establishes standardized operational procedures for Horizon Airlines, covering organizational structure, accountabilities, the Operations Control Center, decision-making hierarchy, and document control. This is the foundational governance section of the operations manual.",
+      "page_number": "3",
+      "subsections": [
+        {
+          "subsection_title": "1.1 Purpose",
+          "summary": "Defines the purpose of the Operations Manual as establishing standardized procedures for safe, efficient, compliant, and customer-focused airline operations, serving as the primary operational reference for all departments.",
+          "key_points": [
+            "Manual establishes standardized operational procedures for Horizon Airlines",
+            "Serves as the primary operational reference for all departments",
+            "Personnel must comply with procedures unless deviation is required to preserve life, safety, security, or regulatory compliance"
+          ],
+          "page_number": "3"
+        },
+        {
+          "subsection_title": "1.2 Operational Philosophy",
+          "summary": "Outlines the core operational principles of Horizon Airlines, including safety, regulatory compliance, and continuous improvement.",
+          "key_points": [
+            "Safety First: Safety takes precedence over efficiency, schedule, commercial, and financial objectives",
+            "No employee shall be penalized for delaying/cancelling operations due to legitimate safety concerns",
+            "Regulatory Compliance: Must comply with national aviation regulations, airport authority requirements, ATC instructions, company procedures, and manufacturer guidance",
+            "Continuous Improvement: Periodic reviews for safety, efficiency, training, and technology enhancements"
+          ],
+          "page_number": "3-4"
+        },
+        {
+          "subsection_title": "1.3 Organizational Structure",
+          "summary": "Describes the operational divisions of Horizon Airlines and their responsibilities.",
+          "key_points": [
+            "Executive Management: Corporate strategy, regulatory oversight, financial management, safety policy approval",
+            "Operations Division: Daily flight operations, crew management, dispatch, operational control",
+            "Ground Operations Division: Aircraft turnaround, ramp operations, passenger handling, baggage handling",
+            "Technical Operations Division: Maintenance, airworthiness, engineering support, aircraft reliability",
+            "Safety Department: Risk management, safety investigations, compliance monitoring, safety reporting"
+          ],
+          "page_number": "4-5"
+        },
+        {
+          "subsection_title": "1.4 Accountabilities",
+          "summary": "Defines the duties and responsibilities of key leadership roles in the airline.",
+          "key_points": [
+            "CEO: Approves operational policies, allocates resources, ensures compliance, supports safety initiatives",
+            "Director of Operations: Oversees operational activities, ensures SOP compliance, manages disruptions, coordinates interdepartmental activities",
+            "Safety Manager: Maintains SMS, monitors safety performance, conducts risk assessments, coordinates investigations",
+            "OCC Manager: Supervises daily operations, monitors flight progress, manages disruptions, coordinates emergency responses"
+          ],
+          "page_number": "5-6"
+        },
+        {
+          "subsection_title": "1.5 Operations Control Center (OCC)",
+          "summary": "Defines the OCC as the central coordination hub for airline operations that operates continuously and maintains situational awareness of key operational elements.",
+          "key_points": [
+            "OCC serves as the central coordination hub",
+            "Operates continuously, monitoring aircraft locations, flight status, weather, airport conditions, crew availability, maintenance status, and security concerns"
+          ],
+          "page_number": "6-7"
+        },
+        {
+          "subsection_title": "1.6 OCC Responsibilities",
+          "summary": "Details the three core areas of OCC responsibility: flight monitoring, disruption management, and communication.",
+          "key_points": [
+            "Flight Monitoring: Track all flights from departure to arrival, monitoring times, route deviations, fuel status, and aircraft performance",
+            "Disruption Management: Manage delays, diversions, cancellations, aircraft substitutions, and crew reassignments",
+            "Communication: Maintain contact with flight crews, airports, ground handling agents, maintenance control, and executive management"
+          ],
+          "page_number": "7"
+        },
+        {
+          "subsection_title": "1.7 Authority to Operate",
+          "summary": "Specifies the conditions that must be met before a flight may be dispatched, covering aircraft, crew, environmental, and airport requirements.",
+          "key_points": [
+            "Aircraft must be airworthy, free of unresolved critical defects, and meet operational requirements",
+            "Crew must be qualified, medically fit, meet duty time requirements, and possess required certifications",
+            "Weather must meet operational minima and not create unacceptable risk",
+            "Departure and destination airports must be operational and meet performance requirements"
+          ],
+          "page_number": "7-8"
+        },
+        {
+          "subsection_title": "1.8 Operational Decision Making",
+          "summary": "Establishes a four-level hierarchy for operational decision-making based on the severity and nature of the situation.",
+          "key_points": [
+            "Level 1 \u2013 Routine Operations: Handled by operational personnel (e.g., gate changes, minor delays, passenger accommodations)",
+            "Level 2 \u2013 Operational Disruptions: Handled by supervisors (e.g., significant delays, equipment failures, crew shortages)",
+            "Level 3 \u2013 Major Disruptions: Handled by OCC management (e.g., airport closures, severe weather, aircraft grounding)",
+            "Level 4 \u2013 Crisis Events: Handled by executive management (e.g., major accidents, security incidents, national emergencies)"
+          ],
+          "page_number": "8-9"
+        },
+        {
+          "subsection_title": "1.9 Document Control",
+          "summary": "Establishes rules for version control, review, approval, and distribution of operational procedures.",
+          "key_points": [
+            "All procedures must be version controlled, reviewed annually, approved before publication, and distributed to affected personnel",
+            "Personnel shall use only the latest approved version",
+            "Outdated documents shall be archived and removed from operational use"
+          ],
+          "page_number": "9"
+        },
+        {
+          "subsection_title": "1.10 Record Keeping",
+          "summary": "Specifies the categories of operational records that must be maintained and the requirement to retain them per regulatory standards.",
+          "key_points": [
+            "Flight Records: Flight plans, dispatch releases, fuel documentation, delay reports",
+            "Crew Records: Qualifications, training records, duty logs",
+            "Maintenance Records: Defect reports, maintenance actions, airworthiness documentation",
+            "Safety Records: Hazard reports, incident reports, investigation reports",
+            "Records shall be retained according to regulatory requirements"
+          ],
+          "page_number": "10"
+        },
+        {
+          "subsection_title": "1.11 Escalation Procedures",
+          "summary": "Defines conditions requiring immediate escalation and the process to be followed.",
+          "key_points": [
+            "Personnel must immediately escalate safety concerns, regulatory violations, security incidents, operational emergencies, and significant service disruptions",
+            "Escalation shall occur through the established chain of command"
+          ],
+          "page_number": "10-11"
+        },
+        {
+          "subsection_title": "1.12 Management of Change",
+          "summary": "Defines the five-step process that must be followed before implementing operational changes.",
+          "key_points": [
+            "1. Conduct risk assessment",
+            "2. Identify affected stakeholders",
+            "3. Update documentation",
+            "4. Train affected personnel",
+            "5. Monitor implementation results"
+          ],
+          "page_number": "11"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 2: Passenger Services & Airport Operations",
+      "section_summary": "Begins coverage of passenger service operations, focusing on the safe, efficient, secure, and customer-focused movement of passengers from check-in through arrival. The manual continues beyond page 12 with additional subsections on check-in, boarding, baggage, and ground operations.",
+      "page_number": "11",
+      "subsections": [
+        {
+          "subsection_title": "2.1 Purpose",
+          "summary": "Defines the purpose of Passenger Services and Airport Operations as ensuring safe, efficient, secure, and customer-focused movement of passengers throughout their journey.",
+          "key_points": [
+            "Personnel shall provide professional assistance while maintaining compliance with operational, safety, security, and regulatory requirements",
+            "All passenger interactions shall prioritize safety, accuracy, efficiency, and customer satisfaction"
+          ],
+          "page_number": "11-12"
+        },
+        {
+          "subsection_title": "2.2 Passenger Journey Management",
+          "summary": "Describes the responsibilities of Passenger Services personnel in managing all stages of the passenger journey, with attention to privacy and data protection.",
+          "key_points": [
+            "Stages include: reservation support, check-in, document verification, baggage acceptance, security coordination, boarding, arrival assistance, connection support, and disruption management",
+            "Passenger information shall be handled in accordance with applicable privacy and data protection requirements"
+          ],
+          "page_number": "12"
+        },
+        {
+          "subsection_title": "2.3 Check-In Operations",
+          "summary": "Defines the role of check-in operations in verifying passenger eligibility for travel and ensuring accurate flight documentation, with a detailed list of check-in agent duties.",
+          "key_points": [
+            "Verify passenger identity, travel documentation, and reservation status",
+            "Assign seating, process baggage, and issue boarding passes",
+            "Identify special service requirements",
+            "Passengers shall not be accepted for travel if required travel documents are missing, expired, invalid, or otherwise non-compliant"
+          ],
+          "page_number": "12"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 2: Passenger Services (continued)",
+      "section_summary": "This section continues with detailed passenger service procedures covering document verification, baggage handling, special assistance, boarding operations, delay management, and performance monitoring.",
+      "page_number": "13",
+      "subsections": [
+        {
+          "subsection_title": "2.4 Document Verification",
+          "summary": "Procedures for verifying passenger documentation before issuing boarding passes for both domestic and international travel.",
+          "key_points": [
+            "Domestic travel requires government-issued ID, reservation details, and security requirements",
+            "International travel requires passport validity, visa, transit, health, and immigration documentation",
+            "Travel eligibility uncertainties must be escalated to a supervisor"
+          ],
+          "page_number": "13"
+        },
+        {
+          "subsection_title": "2.5 Seat Assignment Procedures",
+          "summary": "Guidelines for managing seat assignments based on multiple operational and passenger criteria.",
+          "key_points": [
+            "Assignments based on aircraft configuration, passenger preferences, safety, special assistance, and operational considerations",
+            "Emergency exit row seating restricted to eligible passengers only",
+            "Passengers requiring special assistance cannot be assigned to emergency exit row seats"
+          ],
+          "page_number": "13"
+        },
+        {
+          "subsection_title": "2.6 Baggage Acceptance",
+          "summary": "Requirements for accepting checked baggage, including verification and tagging procedures.",
+          "key_points": [
+            "Baggage accepted only after passenger, flight, weight verification, and security screening",
+            "Personnel must verify ownership, apply tags, confirm destination coding, and identify special baggage",
+            "Excess baggage fees collected according to company policy"
+          ],
+          "page_number": "13-14"
+        },
+        {
+          "subsection_title": "2.7 Special Baggage",
+          "summary": "Identification and handling requirements for special categories of baggage.",
+          "key_points": [
+            "Includes sporting equipment, musical instruments, medical devices, mobility aids, oversized, and fragile items",
+            "Special baggage must be tagged and processed according to handling requirements",
+            "Passengers advised of applicable limitations or liability restrictions"
+          ],
+          "page_number": "14"
+        },
+        {
+          "subsection_title": "2.8 Dangerous Goods Screening",
+          "summary": "Procedures for identifying prohibited and restricted items before baggage acceptance.",
+          "key_points": [
+            "Personnel must identify prohibited items including lithium batteries, flammable materials, explosives, compressed gases, and corrosive substances",
+            "Suspected dangerous goods violations must be immediately reported"
+          ],
+          "page_number": "14-15"
+        },
+        {
+          "subsection_title": "2.9 Special Assistance Passengers",
+          "summary": "Services and coordination requirements for passengers requiring additional support.",
+          "key_points": [
+            "Includes passengers with reduced mobility, elderly, medical conditions, and visual/hearing impairments",
+            "Assistance coordinated before departure whenever possible"
+          ],
+          "page_number": "15"
+        },
+        {
+          "subsection_title": "2.10 Wheelchair Services",
+          "summary": "Coordination of wheelchair assistance from check-in through arrival at destination.",
+          "key_points": [
+            "Proper documentation of assistance requests required",
+            "Equipment availability and safe transport through airport facilities must be ensured",
+            "Priority boarding provided where appropriate",
+            "Passengers must not be separated from required mobility equipment without approved procedures"
+          ],
+          "page_number": "15"
+        },
+        {
+          "subsection_title": "2.11 Unaccompanied Minors",
+          "summary": "Procedures for accepting and supervising unaccompanied minors during travel.",
+          "key_points": [
+            "Minors accepted only in accordance with company policy",
+            "Guardian information must be verified",
+            "Required documentation completed and identification materials provided",
+            "Child monitored throughout airport processing until transferred to authorized personnel at destination"
+          ],
+          "page_number": "15-16"
+        },
+        {
+          "subsection_title": "2.12 Passengers with Medical Requirements",
+          "summary": "Evaluation and handling of passengers requiring medical assistance.",
+          "key_points": [
+            "Requirements may include medical clearance, oxygen arrangements, mobility assistance, and medical equipment approval",
+            "Medical information handled confidentially"
+          ],
+          "page_number": "16"
+        },
+        {
+          "subsection_title": "2.13 VIP and Priority Passengers",
+          "summary": "Processing standards for VIP passengers while maintaining operational compliance.",
+          "key_points": [
+            "VIPs include government officials, corporate executives, frequent flyers, and special guests",
+            "VIP processing conducted professionally without compromising safety, security, or operational requirements",
+            "Operational rules apply equally to all passengers"
+          ],
+          "page_number": "16"
+        },
+        {
+          "subsection_title": "2.14 Security Coordination",
+          "summary": "Personnel responsibilities for supporting airport security procedures.",
+          "key_points": [
+            "Responsibilities include identity verification, boarding pass verification, reporting suspicious activity, and assisting security personnel",
+            "Security concerns must be immediately reported"
+          ],
+          "page_number": "16-17"
+        },
+        {
+          "subsection_title": "2.15 Boarding Operations",
+          "summary": "Standards for conducting boarding operations according to approved schedules.",
+          "key_points": [
+            "Boarding agents verify boarding passes, passenger identity, and security clearance",
+            "Passenger flow monitored and boarding status communicated",
+            "Boarding conducted in an orderly and efficient manner"
+          ],
+          "page_number": "17"
+        },
+        {
+          "subsection_title": "2.16 Priority Boarding",
+          "summary": "Eligibility and procedures for priority boarding services.",
+          "key_points": [
+            "Provided to passengers requiring assistance, families with young children, premium passengers, and active duty personnel",
+            "Priority boarding procedures must not compromise operational efficiency"
+          ],
+          "page_number": "17"
+        },
+        {
+          "subsection_title": "2.17 Final Boarding Procedures",
+          "summary": "Requirements to be completed before gate closure.",
+          "key_points": [
+            "Final passenger counts completed and missing passengers identified",
+            "Announcements made and security reconciliation performed",
+            "No passenger may board after gate closure without approval"
+          ],
+          "page_number": "17-18"
+        },
+        {
+          "subsection_title": "2.18 Passenger Reconciliation",
+          "summary": "Reconciliation of boarded passengers against official records.",
+          "key_points": [
+            "Reconciliation performed against passenger manifests, boarding records, and security records",
+            "Any discrepancy investigated before departure"
+          ],
+          "page_number": "18"
+        },
+        {
+          "subsection_title": "2.19 Denied Boarding",
+          "summary": "Circumstances and handling of denied boarding situations.",
+          "key_points": [
+            "May occur due to overbooking, documentation deficiencies, security concerns, or operational restrictions",
+            "Affected passengers treated professionally and provided assistance per company policy"
+          ],
+          "page_number": "18"
+        },
+        {
+          "subsection_title": "2.20 Missed Connections",
+          "summary": "Assistance provided to passengers experiencing missed connections.",
+          "key_points": [
+            "Assistance includes rebooking options, accommodation eligibility, meal vouchers, and transportation arrangements",
+            "Priority given to minimizing disruption"
+          ],
+          "page_number": "18-19"
+        },
+        {
+          "subsection_title": "2.21 Delay Management",
+          "summary": "Personnel responsibilities during flight delays.",
+          "key_points": [
+            "Provide timely updates and manage passenger expectations",
+            "Coordinate support services and escalate passenger concerns",
+            "Accurate information must always be provided"
+          ],
+          "page_number": "19"
+        },
+        {
+          "subsection_title": "2.22 Flight Cancellations",
+          "summary": "Procedures to follow in the event of flight cancellations.",
+          "key_points": [
+            "Passengers notified promptly and rebooking procedures initiated immediately",
+            "Support services coordinated and applicable compensation policies followed"
+          ],
+          "page_number": "19"
+        },
+        {
+          "subsection_title": "2.23 Arrival Operations",
+          "summary": "Coordination of arrival activities and passenger support.",
+          "key_points": [
+            "Passenger disembarkation coordinated",
+            "Special assistance passengers receive priority support",
+            "Transfer passengers receive guidance and arrival information communicated as necessary"
+          ],
+          "page_number": "19"
+        },
+        {
+          "subsection_title": "2.24 Customer Complaint Management",
+          "summary": "Standards for handling customer complaints professionally.",
+          "key_points": [
+            "Personnel listen actively, document concerns, provide accurate information, and escalate when required",
+            "Complaint trends reviewed to identify improvement opportunities"
+          ],
+          "page_number": "19-20"
+        },
+        {
+          "subsection_title": "2.25 Customer Service Recovery",
+          "summary": "Service recovery measures to restore customer confidence.",
+          "key_points": [
+            "May include rebooking assistance, travel credits, meal vouchers, hotel accommodations, and transportation support",
+            "Efforts must maintain operational compliance"
+          ],
+          "page_number": "20"
+        },
+        {
+          "subsection_title": "2.26 Passenger Safety Responsibilities",
+          "summary": "Personnel responsibilities for passenger safety throughout operations.",
+          "key_points": [
+            "Support safety announcements, emergency procedures, evacuation readiness, and security compliance",
+            "Passenger safety remains the highest priority"
+          ],
+          "page_number": "20"
+        },
+        {
+          "subsection_title": "2.27 Performance Monitoring",
+          "summary": "Metrics used to monitor and improve Passenger Services performance.",
+          "key_points": [
+            "Monitoring includes check-in processing times, boarding efficiency, customer satisfaction, complaint trends, operational compliance, and service recovery effectiveness",
+            "Performance data reviewed regularly to support continuous improvement"
+          ],
+          "page_number": "20-21"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 3: Check-In Operations",
+      "section_summary": "This section establishes the purpose, scope, and procedures for check-in operations, which represent the first direct operational interaction between Horizon Airlines and its passengers. Document ID: OPS-CIN-001; Category: Check-In Operations; Priority: High; Version: 1.0.",
+      "page_number": "21",
+      "subsections": [
+        {
+          "subsection_title": "3.1 Purpose",
+          "summary": "Defines the purpose of Check-In Operations in ensuring passenger eligibility, compliance, and preparation for boarding.",
+          "key_points": [
+            "Verifies passenger eligibility for travel",
+            "Ensures compliance with security and regulatory requirements",
+            "Processes baggage and issues travel documentation",
+            "Plays critical role in schedule integrity, security compliance, and customer satisfaction"
+          ],
+          "page_number": "21"
+        },
+        {
+          "subsection_title": "3.2 Scope",
+          "summary": "Defines the applicability of check-in procedures across various flight types and check-in channels.",
+          "key_points": [
+            "Applies to all passengers on domestic, international, connecting, charter, code-share, and special operations flights",
+            "Covers airport counters, self-service kiosks, online, mobile, and off-airport check-in facilities"
+          ],
+          "page_number": "21-22"
+        },
+        {
+          "subsection_title": "3.3 Check-In Opening Procedures",
+          "summary": "Pre-opening verification and briefing requirements before check-in counters begin operations.",
+          "key_points": [
+            "Verify operational readiness: system, printer, baggage tags, boarding pass stock, manifests, schedules, seat maps, notices",
+            "Communication systems verified and operational requirements confirmed",
+            "Counter supervisors conduct briefings covering passenger loads, special assistance, disruptions, weather, security alerts, staffing, and flight-specific information"
+          ],
+          "page_number": "22"
+        },
+        {
+          "subsection_title": "3.4 Passenger Identification Verification",
+          "summary": "Requirements for verifying passenger identity before processing check-in.",
+          "key_points": [
+            "Identity verified using approved government-issued documentation",
+            "Passenger names must exactly match reservation records",
+            "Discrepancies resolved before check-in completion",
+            "Acceptable ID includes passports, national ID cards, and other approved travel documentation",
+            "Expired or damaged documents evaluated per regulations and airline policy",
+            "Suspected fraudulent documentation immediately reported to supervisors and security authorities"
+          ],
+          "page_number": "22"
+        },
+        {
+          "subsection_title": "3.5 Reservation Validation",
+          "summary": "Begins the process of validating passenger reservations against travel requirements.",
+          "key_points": [
+            "Section content continues beyond the provided text"
+          ],
+          "page_number": "22"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 3 \u2013 Check-in Operations (Continued)",
+      "section_summary": "Continuation of Check-in Operations covering travel document verification, seat assignments, baggage processing, special passenger handling, and quality assurance procedures. This concludes Section 3 of the operations manual.",
+      "page_number": "23-28",
+      "subsections": [
+        {
+          "subsection_title": "3.6 Travel Document Verification",
+          "summary": "International travel requires verification of all necessary travel documentation including passport validity, visa, transit, health, immigration, and customs requirements. Final admission decisions remain the responsibility of destination authorities.",
+          "key_points": [
+            "Personnel must review passport validity, visa requirements, transit requirements, health documentation, immigration, customs, and destination-specific entry conditions.",
+            "Possession of travel documents does not guarantee entry into a country.",
+            "Documentation deficiencies must be identified before boarding pass issuance.",
+            "Passengers failing destination entry requirements shall not be accepted unless authorized by competent authorities."
+          ],
+          "page_number": "23"
+        },
+        {
+          "subsection_title": "3.7 Seat Assignment Procedures",
+          "summary": "Seat assignments shall be performed using approved reservation systems considering passenger preferences, operational requirements, aircraft balance, accessibility needs, premium entitlements, and safety restrictions.",
+          "key_points": [
+            "Exit row seats may only be assigned to passengers meeting eligibility requirements.",
+            "Personnel must verify exit row passengers are physically capable, understand instructions, and meet regulatory requirements.",
+            "Passengers requiring special assistance shall not be assigned emergency exit row seats."
+          ],
+          "page_number": "23"
+        },
+        {
+          "subsection_title": "3.8 Baggage Acceptance Procedures",
+          "summary": "Checked baggage is accepted only after successful passenger verification and reservation validation. Each piece is weighed, inspected, tagged, and entered into tracking systems.",
+          "key_points": [
+            "Personnel must verify baggage ownership, apply destination tags, verify count, and enter baggage into tracking systems.",
+            "Excess baggage charges collected when applicable.",
+            "Passengers must retain baggage claim receipts until baggage is recovered at destination."
+          ],
+          "page_number": "24"
+        },
+        {
+          "subsection_title": "3.9 Baggage Weight and Size Limitations",
+          "summary": "Personnel must verify compliance with baggage size and weight restrictions, with special handling applied for oversized or overweight baggage.",
+          "key_points": [
+            "Oversized or overweight baggage processed according to approved procedures.",
+            "Passengers informed of additional charges, restrictions, or handling limitations.",
+            "Baggage exceeding safety limitations not accepted without appropriate authorization."
+          ],
+          "page_number": "24"
+        },
+        {
+          "subsection_title": "3.10 Special Baggage Processing",
+          "summary": "Special baggage categories include sporting equipment, musical instruments, medical devices, mobility equipment, fragile items, oversized baggage, and valuable items.",
+          "key_points": [
+            "Personnel apply appropriate handling tags and communicate requirements to baggage operations.",
+            "Passengers advised of limitations of liability and handling restrictions."
+          ],
+          "page_number": "24"
+        },
+        {
+          "subsection_title": "3.11 Dangerous Goods Screening",
+          "summary": "All checked and carry-on baggage shall be screened for prohibited and restricted items, with suspected violations reported immediately.",
+          "key_points": [
+            "Items requiring special review include lithium batteries, compressed gases, flammable liquids, explosives, corrosive materials, radioactive substances, and hazardous chemicals.",
+            "Suspected violations reported to supervisors and airport security personnel.",
+            "No prohibited item accepted without appropriate regulatory approval."
+          ],
+          "page_number": "25"
+        },
+        {
+          "subsection_title": "3.12 Special Assistance Passengers",
+          "summary": "Passengers requiring special assistance are identified during check-in, with service requirements documented and coordinated throughout the journey.",
+          "key_points": [
+            "Special assistance categories include reduced mobility, elderly, visually impaired, hearing impaired, medical support, and language assistance passengers.",
+            "Service requirements communicated to gate and arrival station personnel."
+          ],
+          "page_number": "25"
+        },
+        {
+          "subsection_title": "3.13 Unaccompanied Minor Processing",
+          "summary": "Unaccompanied minors are processed according to approved procedures with verification of guardian information, emergency contacts, identification, and authorization documentation.",
+          "key_points": [
+            "Required forms completed before acceptance.",
+            "Unaccompanied minors remain under continuous supervision until transferred to authorized personnel at destination.",
+            "Any deviation from approved procedures requires supervisory approval."
+          ],
+          "page_number": "25"
+        },
+        {
+          "subsection_title": "3.14 Passengers Requiring Medical Assistance",
+          "summary": "Passengers requiring medical assistance may need additional review before travel authorization, including evaluation of medical clearances, oxygen, mobility, and equipment needs.",
+          "key_points": [
+            "Confidentiality of medical information maintained at all times.",
+            "Medical concerns affecting fitness for travel referred to designated authorities."
+          ],
+          "page_number": "26"
+        },
+        {
+          "subsection_title": "3.15 Group Check-in Procedures",
+          "summary": "Groups are processed efficiently while maintaining individual passenger verification requirements, with group coordinators providing manifests and documentation in advance.",
+          "key_points": [
+            "Group coordinators provide passenger manifests, travel documentation, baggage information, and special service requirements.",
+            "All group members must be accounted for before boarding documentation is issued."
+          ],
+          "page_number": "26"
+        },
+        {
+          "subsection_title": "3.16 Late Check-in Passengers",
+          "summary": "Passengers arriving after published check-in deadlines may be denied acceptance depending on operational conditions, with evaluation of processing time and security requirements.",
+          "key_points": [
+            "Personnel evaluate processing time, baggage handling limitations, security requirements, and boarding schedules.",
+            "Late acceptance must not compromise safety, security, or on-time departure performance."
+          ],
+          "page_number": "26"
+        },
+        {
+          "subsection_title": "3.17 Flight Irregularities During Check-in",
+          "summary": "Personnel provide timely and accurate information during operational disruptions such as delays, cancellations, gate changes, weather, or security concerns.",
+          "key_points": [
+            "Disruption types include delays, cancellations, gate changes, aircraft substitutions, weather events, maintenance issues, and security concerns.",
+            "Passenger communication must remain factual, professional, and consistent with approved operational information."
+          ],
+          "page_number": "27"
+        },
+        {
+          "subsection_title": "3.18 Boarding Pass Issuance",
+          "summary": "Boarding passes are issued only after all eligibility requirements are satisfied and must contain accurate passenger and flight information.",
+          "key_points": [
+            "Boarding passes contain passenger information, seat assignments, flight details, gate information, and boarding sequence.",
+            "Errors corrected immediately; lost or damaged passes replaced using approved procedures."
+          ],
+          "page_number": "27"
+        },
+        {
+          "subsection_title": "3.19 Check-in Closure Procedures",
+          "summary": "Check-in operations close according to published schedules, with supervisors verifying passenger counts, baggage reconciliation, standby processing, and special assistance requirements.",
+          "key_points": [
+            "Any unresolved discrepancy escalated before flight departure.",
+            "Final passenger information transmitted to gate operations, baggage operations, flight operations, and operational control."
+          ],
+          "page_number": "27"
+        },
+        {
+          "subsection_title": "3.20 Quality Assurance",
+          "summary": "Check-in performance is monitored through audits, customer feedback, compliance reviews, and operational metrics, with continuous improvement initiatives implemented.",
+          "key_points": [
+            "Monitoring includes operational audits, customer feedback, compliance reviews, baggage processing accuracy, document verification accuracy, security compliance, and departure performance metrics.",
+            "Continuous improvement initiatives target efficiency, accuracy, compliance, and passenger satisfaction."
+          ],
+          "page_number": "28"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 4 \u2013 Boarding Operations",
+      "section_summary": "Section 4 establishes procedures for the safe, secure, accurate, and efficient transfer of passengers from the terminal to the aircraft. Boarding operations represent the final passenger processing stage before departure and are critical to schedule integrity and operational safety.",
+      "page_number": "28",
+      "subsections": [
+        {
+          "subsection_title": "4.1 Purpose",
+          "summary": "Defines the purpose of Boarding Operations as ensuring safe, secure, accurate, and efficient transfer of passengers from terminal to aircraft while complying with security, reconciliation, timeline, and safety regulations.",
+          "key_points": [
+            "Boarding procedures ensure compliance with security, passenger reconciliation, operational timelines, and safety regulations.",
+            "Minimizes delays while maintaining positive customer experience.",
+            "Represents the final passenger processing stage before departure."
+          ],
+          "page_number": "28"
+        },
+        {
+          "subsection_title": "4.2 Scope",
+          "summary": "Boarding procedures apply to all scheduled, charter, repositioning, and special operations flights operated by Horizon Airlines, including domestic, international, transit, connecting, charter, and special operations.",
+          "key_points": [
+            "Applies to scheduled, charter, repositioning, and special operations flights.",
+            "Covers domestic, international, transit, connecting passengers, charter services, and special operations.",
+            "Boarding personnel ensure compliance with operational, security, immigration, customs, and safety requirements."
+          ],
+          "page_number": "29"
+        },
+        {
+          "subsection_title": "4.3 Pre-Boarding Preparation",
+          "summary": "Gate personnel verify operational readiness before boarding commences, including aircraft assignment, gate assignment, boarding schedule, passenger manifest, special service requests, operational notices, and security requirements.",
+          "key_points": [
+            "Verification includes aircraft assignment, gate assignment, boarding schedule, passenger manifest, special service requests, operational notices, and security requirements.",
+            "Any discrepancy affecting boarding operations immediately escalated."
+          ],
+          "page_number": "29"
+        },
+        {
+          "subsection_title": "4.4 Gate Setup Procedures",
+          "summary": "Before passenger arrival at the gate, personnel ensure boarding equipment, scanners, announcement systems, and information displays are operational, and that security barriers and emergency exits are properly positioned.",
+          "key_points": [
+            "Boarding equipment, scanners, public announcement systems, and passenger information displays must be operational.",
+            "Security barriers properly positioned and emergency exits unobstructed.",
+            "Gate areas remain organized and safe throughout boarding."
+          ],
+          "page_number": "29-30"
+        },
+        {
+          "subsection_title": "4.5 Passenger Manifest Review",
+          "summary": "Gate personnel review the passenger manifest before boarding begins, including total passenger count, special assistance, unaccompanied minors, VIPs, standby, crew travelers, and security watchlist notifications.",
+          "key_points": [
+            "Manifest review includes passenger count, special assistance, unaccompanied minors, VIPs, standby, crew travelers, and watchlist notifications.",
+            "Any discrepancy between manifest data and operational systems resolved before boarding begins."
+          ],
+          "page_number": "30"
+        },
+        {
+          "subsection_title": "4.6 Special Assistance Coordination",
+          "summary": "Passengers requiring special assistance are identified before boarding, with categories including wheelchair, reduced mobility, medical, elderly, hearing impaired, and visually impaired passengers.",
+          "key_points": [
+            "Special assistance categories include wheelchair, reduced mobility, medical, elderly, hearing impaired, and visually impaired passengers.",
+            "Coordination completed with airport assistance personnel before boarding commences."
+          ],
+          "page_number": "30"
+        },
+        {
+          "subsection_title": "4.7 Boarding Announcements",
+          "summary": "Boarding announcements shall provide passengers with clear instructions regarding boarding sequence, gate information, boarding requirements, carry-on baggage restrictions, and final boarding times. Announcements shall be professional, accurate, and timely, with operational changes communicated immediately.",
+          "key_points": [
+            "Must cover boarding sequence, gate info, requirements, baggage restrictions, and final boarding times",
+            "Announcements must be professional, accurate, and timely",
+            "Operational changes communicated immediately"
+          ],
+          "page_number": "31"
+        },
+        {
+          "subsection_title": "4.8 Priority Boarding",
+          "summary": "Priority boarding may be provided to specific passenger categories and shall be conducted in an orderly manner without compromising security or operational efficiency.",
+          "key_points": [
+            "Eligible passengers: those requiring assistance, unaccompanied minors, families with small children, premium cabin passengers, loyalty program priority passengers, and authorized government personnel",
+            "Must be orderly and not compromise security or efficiency"
+          ],
+          "page_number": "31"
+        },
+        {
+          "subsection_title": "4.9 Boarding Sequence Management",
+          "summary": "Boarding shall be conducted according to approved boarding groups organized by various criteria. Personnel shall monitor passenger flow and prevent congestion within boarding areas.",
+          "key_points": [
+            "Boarding groups organized by cabin class, loyalty status, seat location, special assistance requirements, and operational needs",
+            "Personnel must monitor flow and prevent congestion"
+          ],
+          "page_number": "31"
+        },
+        {
+          "subsection_title": "4.10 Boarding Pass Verification",
+          "summary": "Every passenger shall present a valid boarding pass before boarding. Personnel must verify multiple elements, and invalid or unauthorized boarding passes shall be investigated immediately. No passenger may board without valid authorization.",
+          "key_points": [
+            "Verify passenger identity, flight number, departure date, boarding authorization, and seat assignment",
+            "Invalid, duplicate, altered, or unauthorized passes investigated immediately",
+            "No boarding without valid authorization"
+          ],
+          "page_number": "32"
+        },
+        {
+          "subsection_title": "4.11 Identity Verification",
+          "summary": "Identity verification shall be conducted according to applicable security requirements. Suspected identity fraud shall be immediately escalated to security authorities.",
+          "key_points": [
+            "Passenger identity must match boarding documentation",
+            "Travel documents must remain valid",
+            "Security requirements must be satisfied",
+            "Suspected fraud escalated immediately to security authorities"
+          ],
+          "page_number": "32"
+        },
+        {
+          "subsection_title": "4.12 Carry-On Baggage Compliance",
+          "summary": "Gate personnel shall monitor carry-on baggage compliance with size, weight, and security restrictions. Excess baggage may be transferred to checked baggage processing if necessary.",
+          "key_points": [
+            "Must meet size and weight requirements",
+            "Must comply with security restrictions",
+            "Excess baggage may be transferred to checked processing",
+            "Passengers informed of restrictions before boarding"
+          ],
+          "page_number": "32"
+        },
+        {
+          "subsection_title": "4.13 Standby Passenger Management",
+          "summary": "Standby passengers shall only be cleared after confirmation of available seating capacity. Standby boarding shall be completed before final boarding closure whenever possible.",
+          "key_points": [
+            "Includes seat assignment, manifest updates, boarding authorization, and passenger notification",
+            "Should be completed before final boarding closure"
+          ],
+          "page_number": "33"
+        },
+        {
+          "subsection_title": "4.14 Overbooking Management",
+          "summary": "For overbooked flights, personnel shall follow approved denied boarding procedures, prioritizing voluntary solutions, rebooking options, and customer service recovery measures. Involuntary denied boarding shall be managed according to regulatory requirements and company policy.",
+          "key_points": [
+            "Priority: voluntary solutions, rebooking options, customer service recovery",
+            "Involuntary denied boarding per regulatory requirements and company policy"
+          ],
+          "page_number": "33"
+        },
+        {
+          "subsection_title": "4.15 Passenger Reconciliation",
+          "summary": "Passenger reconciliation shall ensure that every boarded passenger is accounted for, with verification of multiple record systems. All discrepancies shall be resolved before departure authorization.",
+          "key_points": [
+            "Verify passenger manifest, boarding records, security records, and special assistance records",
+            "All discrepancies resolved before departure authorization"
+          ],
+          "page_number": "34"
+        },
+        {
+          "subsection_title": "4.16 No-Show Passengers",
+          "summary": "Passengers who fail to report for boarding before closure shall be classified as no-show passengers. Associated baggage shall be handled according to applicable security procedures.",
+          "key_points": [
+            "Personnel shall attempt passenger contact, verify status, and update operational records",
+            "No-show passenger baggage handled per security procedures"
+          ],
+          "page_number": "34"
+        },
+        {
+          "subsection_title": "4.17 Security Reconciliation",
+          "summary": "Security reconciliation shall be completed before aircraft departure to ensure all boarded passengers are authorized and records remain consistent. Discrepancies shall be resolved immediately.",
+          "key_points": [
+            "All boarded passengers must be authorized",
+            "No unauthorized passenger may have boarded",
+            "Passenger and baggage records must remain consistent"
+          ],
+          "page_number": "34"
+        },
+        {
+          "subsection_title": "4.18 Final Boarding Call",
+          "summary": "Final boarding announcements shall be made according to operational schedules, identifying remaining passengers, closure deadlines, and consequences of missed boarding. Personnel shall document final boarding activities.",
+          "key_points": [
+            "Identify remaining passengers, boarding closure deadlines, and consequences of missed boarding",
+            "Personnel must document final boarding activities"
+          ],
+          "page_number": "35"
+        },
+        {
+          "subsection_title": "4.19 Gate Closure Procedures",
+          "summary": "Gate closure shall occur according to published operational schedules. Multiple verification checks must be completed before closure, and no additional passengers accepted after closure unless authorized by operational control.",
+          "key_points": [
+            "Verify passenger reconciliation, boarding completion, manifest accuracy, and security reconciliation",
+            "No additional passengers accepted after gate closure unless authorized"
+          ],
+          "page_number": "35"
+        },
+        {
+          "subsection_title": "4.20 Aircraft Communications",
+          "summary": "Gate personnel shall communicate boarding status to flight crew, ground operations, operations control center, and dispatch personnel, including specific operational details.",
+          "key_points": [
+            "Communicate to flight crew, ground operations, operations control center, and dispatch",
+            "Information includes passenger count, special assistance status, boarding completion time, and operational concerns"
+          ],
+          "page_number": "35"
+        },
+        {
+          "subsection_title": "4.21 Post-Boarding Documentation",
+          "summary": "After boarding completion, personnel shall finalize passenger counts, update manifests, complete boarding reports, and document irregularities. Operational records shall be retained according to company requirements.",
+          "key_points": [
+            "Finalize passenger counts, update manifests, complete boarding reports, document irregularities",
+            "Records retained according to company requirements"
+          ],
+          "page_number": "36"
+        },
+        {
+          "subsection_title": "4.22 Boarding Delays",
+          "summary": "If boarding delays occur, personnel shall identify the cause, communicate accurate information, coordinate corrective actions, and escalate significant disruptions. Passengers shall receive timely updates throughout the delay.",
+          "key_points": [
+            "Identify cause, communicate accurate info, coordinate corrective actions, escalate disruptions",
+            "Passengers receive timely updates"
+          ],
+          "page_number": "36"
+        },
+        {
+          "subsection_title": "4.23 Irregular Boarding Events",
+          "summary": "Irregular events may include aircraft substitutions, gate changes, security incidents, passenger disturbances, system failures, and weather disruptions. Personnel shall follow approved contingency procedures and maintain continuous communication with operational stakeholders.",
+          "key_points": [
+            "Events include aircraft substitutions, gate changes, security incidents, passenger disturbances, system failures, and weather disruptions",
+            "Follow approved contingency procedures with continuous stakeholder communication"
+          ],
+          "page_number": "36"
+        },
+        {
+          "subsection_title": "4.24 Passenger Misconduct During Boarding",
+          "summary": "Passengers exhibiting disruptive, aggressive, intoxicated, or threatening behavior shall be evaluated before boarding authorization is granted. Boarding may be denied when necessary to protect safety and security.",
+          "key_points": [
+            "Assess safety risks, notify supervisors, coordinate with security, document all incidents",
+            "Boarding may be denied to protect safety and security"
+          ],
+          "page_number": "37"
+        },
+        {
+          "subsection_title": "4.25 Quality Assurance",
+          "summary": "Boarding performance shall be monitored through various metrics, and continuous improvement activities shall be implemented to enhance efficiency, compliance, safety, and customer experience.",
+          "key_points": [
+            "Monitor boarding completion times, on-time departure performance, reconciliation accuracy, security compliance, customer satisfaction, and incident reporting trends",
+            "Continuous improvement for efficiency, compliance, safety, and customer experience"
+          ],
+          "page_number": "37"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 5 \u2013 Baggage Handling Operations",
+      "section_summary": "This section establishes procedures for the safe, secure, accurate, and timely movement of passenger baggage from acceptance through delivery, supporting operational efficiency, passenger satisfaction, security compliance, and aircraft loading requirements.",
+      "page_number": "37",
+      "subsections": [
+        {
+          "subsection_title": "5.1 Purpose",
+          "summary": "The purpose of Baggage Handling Operations is to ensure the safe, secure, accurate, and timely movement of passenger baggage from acceptance through delivery. All baggage shall be processed in accordance with safety regulations, security requirements, and company procedures.",
+          "key_points": [
+            "Ensure safe, secure, accurate, and timely baggage movement",
+            "Support operational efficiency, passenger satisfaction, security compliance, and aircraft loading requirements",
+            "Reference sources: FAA Airport Operations Handbook, IATA Airport Handling Practices, Flight Operations Manual Template, UK OTAC Operations Manual Guidance"
+          ],
+          "page_number": "37"
+        },
+        {
+          "subsection_title": "5.2 Scope",
+          "summary": "These procedures apply to all checked baggage, transfer baggage, special baggage, oversized baggage, crew baggage, delayed baggage, and mishandled baggage processed by Horizon Airlines. Baggage handling personnel shall maintain custody and accountability of baggage throughout the transportation process.",
+          "key_points": [
+            "Covers all baggage types: checked, transfer, special, oversized, crew, delayed, and mishandled",
+            "Personnel must maintain custody and accountability throughout transportation"
+          ],
+          "page_number": "37"
+        },
+        {
+          "subsection_title": "5.3 Baggage Acceptance",
+          "summary": "Baggage acceptance begins during passenger check-in. Personnel shall verify baggage ownership before accepting baggage for transport. Each accepted bag shall receive a valid baggage tag with destination, flight details, and unique tracking identifiers. Only ticketed passengers with confirmed travel authorization may have baggage accepted.",
+          "key_points": [
+            "Verify baggage ownership before acceptance",
+            "Each bag receives a valid tag with destination, flight, and tracking identifiers",
+            "Only accepted from ticketed passengers with confirmed travel authorization",
+            "Improperly tagged baggage removed from processing until discrepancies resolved"
+          ],
+          "page_number": "38"
+        },
+        {
+          "subsection_title": "5.4 Baggage Identification",
+          "summary": "Each baggage item shall be assigned a unique baggage identification number recorded within approved baggage tracking systems. Personnel shall verify that tag information matches passenger reservation records and flight routing. Incorrect tagging may result in delays, security concerns, and operational disruptions and shall be corrected immediately.",
+          "key_points": [
+            "Unique identification number assigned to each item",
+            "Information recorded in approved baggage tracking systems",
+            "Tag information must match passenger reservation and flight routing",
+            "Incorrect tagging corrected immediately"
+          ],
+          "page_number": "39"
+        },
+        {
+          "subsection_title": "5.5 Baggage Security Screening",
+          "summary": "All baggage shall undergo required security screening before loading, which may include X-ray inspection, explosive detection screening, manual inspection, or additional procedures. Baggage failing security requirements shall not proceed until clearance is obtained, and suspicious items shall be immediately reported.",
+          "key_points": [
+            "Screening methods: X-ray, explosive detection, manual inspection, or additional local procedures",
+            "Failed baggage held until clearance obtained",
+            "Suspicious items reported immediately to airport security and supervisors"
+          ],
+          "page_number": "39"
+        },
+        {
+          "subsection_title": "5.6 Baggage Sorting Operations",
+          "summary": "Following acceptance and screening, baggage shall be sorted according to destination, flight number, transfer routing, and handling requirements. Sorting personnel shall verify multiple sorting criteria, and incorrectly sorted baggage shall be immediately corrected.",
+          "key_points": [
+            "Verify flight assignment, destination coding, priority status, transfer status, and special handling",
+            "Incorrectly sorted baggage corrected immediately"
+          ],
+          "page_number": "39"
+        },
+        {
+          "subsection_title": "5.7 Transfer Baggage Processing",
+          "summary": "Transfer baggage refers to baggage continuing onto a connecting flight. Transfer baggage personnel shall verify onward flight information, confirm routing, ensure transfer deadlines are met, and coordinate with connecting stations. Priority shall be given to short connection baggage to minimize transfer failures.",
+          "key_points": [
+            "Verify onward flight information, confirm routing, meet transfer deadlines, coordinate with stations",
+            "Priority given to short connection baggage"
+          ],
+          "page_number": "40"
+        },
+        {
+          "subsection_title": "5.8 Priority Baggage",
+          "summary": "Priority baggage includes premium cabin baggage, frequent flyer priority baggage, crew baggage, and operational priority baggage. Priority baggage shall receive expedited handling and loading, with procedures monitored to maintain service standards.",
+          "key_points": [
+            "Includes premium cabin, frequent flyer priority, crew, and operational priority baggage",
+            "Receives expedited handling and loading",
+            "Procedures monitored to maintain service standards"
+          ],
+          "page_number": "40"
+        },
+        {
+          "subsection_title": "5.9 Special Baggage",
+          "summary": "Special baggage may include sporting equipment, musical instruments, medical equipment, mobility aids, fragile items, and oversized items. Personnel shall apply appropriate handling tags and ensure special handling instructions accompany the baggage throughout processing.",
+          "key_points": [
+            "Categories: sporting equipment, musical instruments, medical equipment, mobility aids, fragile items, oversized items",
+            "Appropriate handling tags required",
+            "Special handling instructions must accompany baggage",
+            "Protected from unnecessary damage or mishandling"
+          ],
+          "page_number": "40"
+        },
+        {
+          "subsection_title": "5.10 Oversized Baggage",
+          "summary": "Oversized baggage shall be processed separately from standard baggage streams. Personnel shall verify weight limitations, dimensional limitations, aircraft compatibility, and loading requirements. Manual handling shall use approved lifting procedures.",
+          "key_points": [
+            "Processed separately from standard baggage",
+            "Verify weight, dimensions, aircraft compatibility, and loading requirements",
+            "Manual handling uses approved lifting procedures"
+          ],
+          "page_number": "41"
+        },
+        {
+          "subsection_title": "5.11 Fragile Baggage",
+          "summary": "Fragile baggage shall be identified and tagged appropriately. Examples include musical instruments, electronic equipment, artwork, and glass items. Personnel shall exercise additional care during transportation and loading. Fragile tags indicate special handling requirements but do not eliminate damage risk.",
+          "key_points": [
+            "Examples: musical instruments, electronic equipment, artwork, glass items",
+            "Additional care during transportation and loading",
+            "Fragile tags indicate special handling but do not eliminate damage risk"
+          ],
+          "page_number": "41"
+        },
+        {
+          "subsection_title": "5.12 Mobility Aids",
+          "summary": "Wheelchairs and mobility devices shall receive special handling, including condition recording, component protection, proper securing, and prioritized delivery upon arrival.",
+          "key_points": [
+            "Record condition before loading",
+            "Protect sensitive components",
+            "Secure equipment properly",
+            "Prioritize delivery upon arrival"
+          ],
+          "page_number": "41"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 5 \u2013 Baggage Handling Operations (Conclusion)",
+      "section_summary": "This section concludes the baggage handling operations procedures, covering aircraft baggage loading, weight and balance coordination, safety procedures, reconciliation, delivery, delayed/lost/damaged baggage handling, tracking systems, and continuous improvement. [Page 42-47]",
+      "page_number": "42-47",
+      "subsections": [
+        {
+          "subsection_title": "5.13 Aircraft Baggage Loading",
+          "summary": "Personnel shall review aircraft loading instructions before loading baggage, ensuring compliance with weight and balance, load control, compartment limitations, and special handling requirements.",
+          "key_points": [
+            "Review loading instructions before operations",
+            "Comply with weight and balance requirements",
+            "Follow load control and compartment limitations",
+            "Improper loading may affect aircraft performance"
+          ],
+          "page_number": "42"
+        },
+        {
+          "subsection_title": "5.14 Weight and Balance Coordination",
+          "summary": "Baggage loading shall support aircraft weight and balance requirements through coordination with load control personnel. Discrepancies must be reported immediately, and loading shall not proceed until corrected instructions are received.",
+          "key_points": [
+            "Coordinate with load control personnel",
+            "Report balance discrepancies immediately",
+            "Loading shall not proceed until corrections received"
+          ],
+          "page_number": "42"
+        },
+        {
+          "subsection_title": "5.15 Loading Safety Procedures",
+          "summary": "Personnel shall follow safe loading practices at all times, including proper lifting techniques, use of approved equipment, compliance with ramp safety rules, and awareness of moving vehicles.",
+          "key_points": [
+            "Use proper lifting techniques",
+            "Use approved equipment only",
+            "Comply with ramp safety rules",
+            "Report unsafe conditions immediately"
+          ],
+          "page_number": "42-43"
+        },
+        {
+          "subsection_title": "5.16 Final Baggage Reconciliation",
+          "summary": "Before departure, baggage reconciliation shall confirm loaded baggage corresponds to accepted passengers by verifying passenger status, baggage counts, security requirements, and loading records.",
+          "key_points": [
+            "Verify passenger status and baggage counts",
+            "Confirm security requirements met",
+            "Resolve discrepancies before departure authorization"
+          ],
+          "page_number": "43"
+        },
+        {
+          "subsection_title": "5.17 No-Show Baggage Procedures",
+          "summary": "If a passenger fails to board, associated baggage shall be identified and handled per security requirements, including locating baggage, verifying requirements, removing if needed, and updating records.",
+          "key_points": [
+            "Locate and verify affected baggage",
+            "Remove baggage if security requires",
+            "Update operational records",
+            "Complete procedures before departure"
+          ],
+          "page_number": "43"
+        },
+        {
+          "subsection_title": "5.18 Arrival Baggage Unloading",
+          "summary": "Upon aircraft arrival, baggage shall be unloaded according to approved procedures, prioritizing mobility aids, priority baggage, transfer baggage, and standard baggage, then transported to designated delivery areas.",
+          "key_points": [
+            "Prioritize mobility aids and priority baggage",
+            "Handle transfer and standard baggage",
+            "Transport promptly to delivery areas"
+          ],
+          "page_number": "43-44"
+        },
+        {
+          "subsection_title": "5.19 Baggage Delivery",
+          "summary": "Baggage shall be delivered to passengers quickly and accurately, ensuring correct destination delivery, accurate carousel assignment, and timely passenger communication while minimizing delays.",
+          "key_points": [
+            "Ensure correct destination delivery",
+            "Assign accurate carousel locations",
+            "Minimize delivery delays"
+          ],
+          "page_number": "44"
+        },
+        {
+          "subsection_title": "5.20 Delayed Baggage",
+          "summary": "Delayed baggage occurs when baggage does not arrive on the same flight as the passenger. Personnel shall create irregularity reports, verify passenger information, initiate tracing, and provide updates.",
+          "key_points": [
+            "Create baggage irregularity report",
+            "Initiate baggage tracing",
+            "Provide regular passenger updates",
+            "Reunite baggage with owner promptly"
+          ],
+          "page_number": "44"
+        },
+        {
+          "subsection_title": "5.21 Lost Baggage Procedures",
+          "summary": "Baggage may be classified as lost when recovery efforts fail within established timelines. Personnel shall conduct tracing investigations, review records, coordinate with partner stations, and maintain passenger communication.",
+          "key_points": [
+            "Conduct tracing investigations",
+            "Coordinate with partner stations",
+            "Follow compensation regulations and company policy"
+          ],
+          "page_number": "44-45"
+        },
+        {
+          "subsection_title": "5.22 Damaged Baggage Procedures",
+          "summary": "Passengers reporting baggage damage shall receive prompt assistance. Personnel shall inspect damage, document findings, create incident reports, and determine compensation eligibility.",
+          "key_points": [
+            "Inspect and document reported damage",
+            "Create incident reports",
+            "Determine compensation eligibility"
+          ],
+          "page_number": "45"
+        },
+        {
+          "subsection_title": "5.23 Unclaimed Baggage",
+          "summary": "Unclaimed baggage shall be transferred to designated storage facilities. Personnel shall verify ownership, attempt passenger contact, and maintain storage records per regulatory and company requirements.",
+          "key_points": [
+            "Transfer to designated storage facilities",
+            "Verify ownership and contact passengers",
+            "Maintain storage records"
+          ],
+          "page_number": "45"
+        },
+        {
+          "subsection_title": "5.24 Baggage Incident Reporting",
+          "summary": "Documentable events include lost, delayed, damaged, mishandled baggage, security incidents, and tracking failures. Reports shall be reviewed to identify recurring operational issues.",
+          "key_points": [
+            "Document all baggage incidents",
+            "Include security incidents and tracking failures",
+            "Review reports for recurring issues"
+          ],
+          "page_number": "45-46"
+        },
+        {
+          "subsection_title": "5.25 Baggage Tracking Systems",
+          "summary": "Approved baggage tracking systems shall monitor baggage throughout its journey, supporting acceptance, routing, loading, arrival records, and delivery confirmation. Discrepancies shall be investigated immediately.",
+          "key_points": [
+            "Use approved tracking systems",
+            "Support all journey stages",
+            "Investigate system discrepancies immediately"
+          ],
+          "page_number": "46"
+        },
+        {
+          "subsection_title": "5.26 Performance Monitoring",
+          "summary": "Baggage handling performance shall be monitored using mishandled rates, delivery times, damage rates, transfer success, security compliance, and complaint trends to support continuous improvement.",
+          "key_points": [
+            "Monitor mishandled baggage rates",
+            "Track delivery times and damage rates",
+            "Review passenger complaint trends"
+          ],
+          "page_number": "46"
+        },
+        {
+          "subsection_title": "5.27 Continuous Improvement",
+          "summary": "Baggage handling operations shall be continuously reviewed to improve safety, efficiency, reliability, and customer satisfaction through operational audits, employee feedback, incident investigations, and performance data.",
+          "key_points": [
+            "Conduct operational audits",
+            "Use employee feedback and incident investigations",
+            "Identify improvement and corrective action opportunities"
+          ],
+          "page_number": "46-47"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 6 \u2013 Ground Operations & Aircraft Turnaround Operations",
+      "section_summary": "This section establishes procedures for safe, secure, efficient, and timely handling of aircraft while on the ground, covering aircraft arrival, parking, disembarkation, servicing, cleaning, fueling, and turnaround operations. [Page 47-51]",
+      "page_number": "47-51",
+      "subsections": [
+        {
+          "subsection_title": "6.1 Purpose",
+          "summary": "The purpose is to ensure safe, secure, efficient, and timely handling of aircraft while on the ground, encompassing all activities from arrival at parking position through departure, in compliance with approved procedures, safety, security, and manufacturer guidance.",
+          "key_points": [
+            "Ensure safe and secure ground handling",
+            "Coordinate turnaround operations",
+            "Comply with operational and safety requirements"
+          ],
+          "page_number": "47"
+        },
+        {
+          "subsection_title": "6.2 Scope",
+          "summary": "Ground operations include arrival handling, marshalling, parking, disembarkation support, baggage coordination, catering, fueling, cabin servicing, cleaning, maintenance, cargo, pushback, and departure preparation, applying to all Horizon Airlines aircraft and contracted personnel.",
+          "key_points": [
+            "Covers all ground handling activities",
+            "Applies to all Horizon Airlines aircraft",
+            "Includes contracted ground handling personnel"
+          ],
+          "page_number": "48"
+        },
+        {
+          "subsection_title": "6.3 Aircraft Arrival Procedures",
+          "summary": "Prior to arrival, personnel shall verify gate readiness, equipment, staffing, and safety areas. Parking stands shall be inspected for FOD, obstructions, and contamination. Marshalling personnel shall guide aircraft to parking using approved signals or docking systems.",
+          "key_points": [
+            "Verify gate readiness and equipment availability",
+            "Inspect parking stands for hazards",
+            "Monitor aircraft movement for safe clearance"
+          ],
+          "page_number": "48"
+        },
+        {
+          "subsection_title": "6.4 Aircraft Parking Procedures",
+          "summary": "After parking, wheel chocks shall be installed per approved procedures, engine shutdown confirmed, and safety cones positioned around hazard areas. Personnel shall not approach until authorization is provided and safety conditions are met.",
+          "key_points": [
+            "Install wheel chocks per approved procedures",
+            "Confirm engine shutdown before approach",
+            "Position safety cones around hazard areas"
+          ],
+          "page_number": "48"
+        },
+        {
+          "subsection_title": "6.5 Ground Safety Zones",
+          "summary": "Ground safety zones shall be established around parked aircraft, including engine danger zones, propeller hazards, jet blast zones, fueling zones, and movement paths. Personnel shall remain aware of operating aircraft, vehicles, fueling, and weather.",
+          "key_points": [
+            "Establish restricted areas around aircraft",
+            "Personnel awareness of engines, vehicles, fueling",
+            "Unauthorized personnel prohibited from restricted areas"
+          ],
+          "page_number": "48-49"
+        },
+        {
+          "subsection_title": "6.6 Passenger Disembarkation Support",
+          "summary": "Following arrival, disembarkation equipment shall be positioned safely, with jet bridges, stairs, and mobility equipment inspected prior to use. Personnel shall coordinate with cabin crew, provide priority assistance, and maintain security.",
+          "key_points": [
+            "Inspect equipment before use",
+            "Coordinate with cabin crew",
+            "Provide priority support to passengers requiring assistance"
+          ],
+          "page_number": "49"
+        },
+        {
+          "subsection_title": "6.7 Ground Support Equipment Management",
+          "summary": "GSE includes passenger stairs, belt loaders, pushback tractors, ground power units, air conditioning units, baggage carts, tow bars, and service vehicles. Equipment shall be inspected before use and defective items removed from service.",
+          "key_points": [
+            "Includes stairs, belt loaders, pushback tractors, GPUs, ACUs",
+            "Inspect equipment before use",
+            "Remove defective equipment from service immediately"
+          ],
+          "page_number": "49-50"
+        },
+        {
+          "subsection_title": "6.8 Baggage Unloading Operations",
+          "summary": "Unloading shall begin only after safety procedures are completed, following approved loading plans. Priority baggage, mobility aids, transfer, and special baggage shall receive expedited processing while protecting from damage.",
+          "key_points": [
+            "Begin only after safety procedures complete",
+            "Prioritize mobility aids and special baggage",
+            "Protect baggage from damage during transfer"
+          ],
+          "page_number": "50"
+        },
+        {
+          "subsection_title": "6.9 Cargo and Mail Handling",
+          "summary": "Cargo and mail shall be unloaded, transferred, and loaded per approved procedures. Personnel shall verify documentation, handling requirements, security status, and destination. Special cargo shall be handled per applicable regulations.",
+          "key_points": [
+            "Verify shipment documentation and security status",
+            "Handle special cargo per applicable regulations",
+            "Confirm destination and handling requirements"
+          ],
+          "page_number": "50"
+        },
+        {
+          "subsection_title": "6.10 Aircraft Cleaning Operations",
+          "summary": "Cleaning shall begin after disembarkation and safety clearance. Personnel shall remove waste, clean seating and lavatories, replenish supplies, and inspect cabin condition within scheduled turnaround timelines.",
+          "key_points": [
+            "Remove waste and clean cabin areas",
+            "Replenish cabin supplies",
+            "Complete within scheduled turnaround timelines"
+          ],
+          "page_number": "50"
+        },
+        {
+          "subsection_title": "6.11 Water and Waste Servicing",
+          "summary": "Aircraft servicing may include potable water replenishment and lavatory waste servicing. Personnel shall use approved equipment, follow hygiene requirements, prevent contamination, and document completion per environmental and health regulations.",
+          "key_points": [
+            "Use approved servicing equipment",
+            "Follow hygiene and contamination prevention",
+            "Comply with environmental and health regulations"
+          ],
+          "page_number": "51"
+        },
+        {
+          "subsection_title": "6.12 Catering Operations",
+          "summary": "Catering personnel shall coordinate delivery and loading of food, beverages, and supplies, including removal of used supplies, loading required inventory, verifying quantities, and documenting services while maintaining food safety standards.",
+          "key_points": [
+            "Remove used supplies and load required inventory",
+            "Verify catering quantities",
+            "Maintain food safety standards throughout"
+          ],
+          "page_number": "51"
+        },
+        {
+          "subsection_title": "6.13 Fueling Operations",
+          "summary": "Aircraft fueling shall only be conducted by authorized personnel. Prior to fueling, aircraft grounding, fire safety, fuel quantities, and communications shall be verified. During fueling, personnel shall continuously monitor for leaks, malfunctions, and hazards.",
+          "key_points": [
+            "Complete aircraft grounding and fire safety verification",
+            "Confirm fuel quantities and communications",
+            "Continuously monitor fueling for leaks and hazards"
+          ],
+          "page_number": "51"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 6 \u2013 Ground Operations & Aircraft Turnaround Operations (Continued)",
+      "section_summary": "This section continues the ground operations procedures, covering maintenance coordination, servicing coordination, departure preparation, load control, walkaround inspection, pushback, performance monitoring, irregular operations, and continuous improvement.",
+      "page_number": "52-55",
+      "subsections": [
+        {
+          "subsection_title": "6.14 Maintenance Coordination During Turnaround",
+          "summary": "Maintenance personnel evaluate aircraft defects, scheduled maintenance, and operational limitations during turnaround. Maintenance actions include technical inspections, component replacement, system testing, and defect rectification, coordinated to minimize disruption while maintaining airworthiness.",
+          "key_points": [
+            "Evaluate reported defects and maintenance requirements",
+            "Maintenance actions include inspections, component replacement, system testing, defect rectification",
+            "Activities coordinated to minimize operational disruption"
+          ],
+          "page_number": "52"
+        },
+        {
+          "subsection_title": "6.15 Aircraft Servicing Coordination",
+          "summary": "Turnaround coordinators monitor all servicing activities to ensure timely completion. Servicing activities include fueling, catering, cleaning, baggage loading, cargo loading, and maintenance support, with delays communicated immediately to operational control.",
+          "key_points": [
+            "Monitor fueling, catering, cleaning, baggage, cargo, and maintenance activities",
+            "Ensure completion within scheduled timelines",
+            "Communicate potential delays immediately"
+          ],
+          "page_number": "52"
+        },
+        {
+          "subsection_title": "6.16 Departure Preparation",
+          "summary": "Personnel verify completion of all turnaround activities prior to departure, including boarding status, baggage, cargo, fueling, maintenance release, and documentation. Unresolved issues are escalated before departure authorization.",
+          "key_points": [
+            "Verify passenger boarding, baggage, cargo, fueling, maintenance release, and documentation",
+            "Escalate any unresolved issues before departure authorization"
+          ],
+          "page_number": "53"
+        },
+        {
+          "subsection_title": "6.17 Load Control Coordination",
+          "summary": "Ground operations personnel coordinate with load control to ensure aircraft loading complies with weight and balance requirements. Discrepancies affecting balance, structural limitations, or safety must be reported immediately.",
+          "key_points": [
+            "Ensure compliance with weight and balance requirements",
+            "Follow loading instructions precisely",
+            "Report any safety-affecting discrepancies immediately"
+          ],
+          "page_number": "53"
+        },
+        {
+          "subsection_title": "6.18 Final Walkaround Inspection",
+          "summary": "Designated personnel conduct a final walkaround inspection before departure to verify equipment removal, cargo and baggage door security, absence of leaks and foreign object debris, and aircraft exterior condition. Abnormal conditions must be investigated.",
+          "key_points": [
+            "Verify equipment removal and door/baggage compartment security",
+            "Check for leaks, FOD, and exterior condition",
+            "Investigate any abnormal conditions before departure"
+          ],
+          "page_number": "53"
+        },
+        {
+          "subsection_title": "6.19 Pushback Preparation",
+          "summary": "Before pushback, personnel verify passenger boarding completion, door closure, equipment removal, pushback route clearance, and communication with flight crew. Pushback only commences after required authorization.",
+          "key_points": [
+            "Verify boarding, door closure, equipment removal, route clearance, crew communication",
+            "Pushback requires proper authorization before commencement"
+          ],
+          "page_number": "54"
+        },
+        {
+          "subsection_title": "6.20 Pushback Operations",
+          "summary": "Pushback is performed by trained personnel using approved equipment and procedures with continuous communication between pushback personnel and flight crew. Any abnormal condition results in immediate suspension.",
+          "key_points": [
+            "Performed by trained personnel using approved equipment",
+            "Continuous communication with flight crew required",
+            "Abnormal conditions cause immediate suspension"
+          ],
+          "page_number": "54"
+        },
+        {
+          "subsection_title": "6.21 Turnaround Performance Monitoring",
+          "summary": "Turnaround performance is monitored through on-time departure, ground delay statistics, safety indicators, equipment reliability, and service quality. Data is reviewed regularly to identify improvement opportunities.",
+          "key_points": [
+            "Monitor on-time performance, delays, safety, equipment reliability, service quality",
+            "Data reviewed regularly for improvement opportunities"
+          ],
+          "page_number": "54"
+        },
+        {
+          "subsection_title": "6.22 Irregular Turnaround Operations",
+          "summary": "Irregular events include equipment failures, weather disruptions, fueling delays, maintenance delays, passenger disruptions, and security incidents. Personnel follow contingency procedures and coordinate corrective actions.",
+          "key_points": [
+            "Irregular events include equipment, weather, fueling, maintenance, passenger, security issues",
+            "Follow approved contingency procedures",
+            "Coordinate corrective actions to minimize impact"
+          ],
+          "page_number": "55"
+        },
+        {
+          "subsection_title": "6.23 Continuous Improvement",
+          "summary": "Ground operations and turnaround procedures are reviewed periodically through audits, inspections, safety reviews, operational analysis, and performance monitoring. Lessons learned are incorporated into future procedures.",
+          "key_points": [
+            "Periodic reviews via audits, inspections, safety reviews, and analysis",
+            "Incorporate lessons learned into future procedures"
+          ],
+          "page_number": "55"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 7 \u2013 Dispatch & Flight Planning",
+      "section_summary": "This section defines the purpose, scope, and procedures for flight dispatch and planning, ensuring every flight is planned, authorized, and monitored in accordance with regulatory requirements and safety standards.",
+      "page_number": "55-62",
+      "subsections": [
+        {
+          "subsection_title": "7.1 Purpose",
+          "summary": "The purpose of Dispatch and Flight Planning Operations is to ensure every flight is planned, authorized, monitored, and supported in accordance with regulatory requirements, operational limitations, safety standards, and company policies. Dispatch personnel evaluate conditions, assess risks, coordinate resources, and provide crews with required information.",
+          "key_points": [
+            "Ensure flights comply with regulations and safety standards",
+            "Dispatchers evaluate conditions, assess risks, coordinate resources",
+            "Provide flight crews with required operational information"
+          ],
+          "page_number": "55"
+        },
+        {
+          "subsection_title": "7.2 Scope",
+          "summary": "Dispatch responsibilities include flight planning, route analysis, fuel planning, weather assessment, airport suitability review, NOTAM analysis, operational risk assessment, flight release preparation, operational monitoring, and coordination with stakeholders.",
+          "key_points": [
+            "Includes planning, route analysis, fuel, weather, NOTAMs, risk assessment",
+            "Dispatch serves as primary operational planning authority before departure"
+          ],
+          "page_number": "55"
+        },
+        {
+          "subsection_title": "7.3 Flight Scheduling Review",
+          "summary": "Dispatch personnel review flight schedules, aircraft assignments, crew assignments, airport operating hours, slot restrictions, and operational notices prior to flight planning. Operational conflicts are identified and resolved before flight release.",
+          "key_points": [
+            "Review schedules, assignments, operating hours, slot restrictions, notices",
+            "Resolve operational conflicts before flight release"
+          ],
+          "page_number": "56"
+        },
+        {
+          "subsection_title": "7.4 Route Planning",
+          "summary": "Routes are selected based on operational efficiency, air traffic restrictions, weather, fuel efficiency, airspace availability, and regulatory requirements. Routes comply with approved navigation procedures.",
+          "key_points": [
+            "Select routes based on efficiency, traffic, weather, fuel, airspace, regulations",
+            "Routes must comply with approved navigation procedures"
+          ],
+          "page_number": "57"
+        },
+        {
+          "subsection_title": "7.5 Weather Analysis",
+          "summary": "Weather assessments include departure, destination, alternate airport conditions, enroute weather, convective activity, turbulence, wind, and visibility. Weather information is continuously monitored.",
+          "key_points": [
+            "Assess weather at departure, destination, alternates, and enroute",
+            "Monitor convective activity, turbulence, wind, visibility",
+            "Continuously monitor during planning process"
+          ],
+          "page_number": "57"
+        },
+        {
+          "subsection_title": "7.6 NOTAM Review",
+          "summary": "Dispatch personnel review all applicable Notices to Air Missions (NOTAMs) for runway closures, taxiway closures, navigation aid outages, airport construction, airspace restrictions, and temporary procedures. Operational impacts are assessed before flight release.",
+          "key_points": [
+            "Review NOTAMs for closures, outages, construction, restrictions",
+            "Assess operational impacts before flight release"
+          ],
+          "page_number": "57"
+        },
+        {
+          "subsection_title": "7.7 Aircraft Performance Analysis",
+          "summary": "Aircraft performance calculations consider aircraft type, weight, runway conditions, temperature, elevation, wind, and operational restrictions. Dispatch ensures the aircraft can safely operate within all performance limitations.",
+          "key_points": [
+            "Consider type, weight, runway, temperature, elevation, wind, restrictions",
+            "Ensure safe operation within performance limitations"
+          ],
+          "page_number": "58"
+        },
+        {
+          "subsection_title": "7.8 Fuel Planning",
+          "summary": "Fuel planning ensures sufficient fuel for taxi, trip, contingency, alternate, holding, and regulatory reserves. Additional fuel may be authorized when operational conditions indicate increased risk.",
+          "key_points": [
+            "Cover taxi, trip, contingency, alternate, holding, regulatory reserves",
+            "Additional fuel permitted for higher-risk conditions"
+          ],
+          "page_number": "58"
+        },
+        {
+          "subsection_title": "7.9 Alternate Airport Selection",
+          "summary": "Suitable alternate airports are selected based on weather suitability, runway capability, operational status, aircraft compatibility, and fuel requirements. Alternates remain available throughout the planned operation.",
+          "key_points": [
+            "Select based on weather, runway, status, aircraft compatibility, fuel",
+            "Alternates must remain available throughout operation"
+          ],
+          "page_number": "58"
+        },
+        {
+          "subsection_title": "7.10 Flight Release Preparation",
+          "summary": "Dispatch personnel prepare a flight release containing flight routing, fuel requirements, weather, NOTAMs, operational restrictions, and aircraft information. The release serves as official authorization for flight operations.",
+          "key_points": [
+            "Release includes routing, fuel, weather, NOTAMs, restrictions, aircraft info",
+            "Serves as official authorization for flight"
+          ],
+          "page_number": "59"
+        },
+        {
+          "subsection_title": "7.11 Flight Crew Briefing",
+          "summary": "Flight crews receive all operationally significant information before departure, including weather concerns, fuel considerations, airport restrictions, aircraft limitations, and operational risks. Questions and concerns are addressed before departure authorization.",
+          "key_points": [
+            "Brief crews on weather, fuel, restrictions, limitations, risks",
+            "Address concerns before departure authorization"
+          ],
+          "page_number": "59"
+        },
+        {
+          "subsection_title": "7.12 Operational Risk Assessment",
+          "summary": "Dispatch personnel evaluate risks associated with weather, maintenance limitations, airport conditions, crew limitations, security concerns, and airspace restrictions. Risk mitigation measures are implemented when necessary.",
+          "key_points": [
+            "Evaluate risks across weather, maintenance, airports, crew, security, airspace",
+            "Implement mitigation measures as needed"
+          ],
+          "page_number": "59"
+        },
+        {
+          "subsection_title": "7.13 Pre-Departure Monitoring",
+          "summary": "Prior to departure, dispatch monitors aircraft readiness, crew readiness, weather developments, airport conditions, fuel status, and maintenance status. Significant changes trigger reassessment of operational suitability.",
+          "key_points": [
+            "Monitor aircraft, crew, weather, airports, fuel, maintenance",
+            "Significant changes require reassessment"
+          ],
+          "page_number": "60"
+        },
+        {
+          "subsection_title": "7.14 Enroute Flight Monitoring",
+          "summary": "After departure, dispatch continues monitoring flight progress, weather, airspace restrictions, fuel consumption, and operational deviations. Operational support is provided throughout the flight.",
+          "key_points": [
+            "Monitor progress, weather, airspace, fuel, deviations enroute",
+            "Provide continuous operational support"
+          ],
+          "page_number": "60"
+        },
+        {
+          "subsection_title": "7.15 Flight Diversion Support",
+          "summary": "If a diversion becomes necessary, dispatch identifies suitable diversion airports, evaluates operational conditions, coordinates ground support, and provides information to flight crews. Diversion decisions prioritize safety.",
+          "key_points": [
+            "Identify diversion airports and evaluate conditions",
+            "Coordinate ground support and inform crews",
+            "Safety is the priority in diversion decisions"
+          ],
+          "page_number": "60"
+        },
+        {
+          "subsection_title": "7.16 Irregular Operations",
+          "summary": "Dispatch coordinates responses to delays, diversions, cancellations, aircraft substitutions, airport closures, and weather disruptions. Operational recovery plans are developed to minimize disruption.",
+          "key_points": [
+            "Coordinate responses to delays, diversions, cancellations, substitutions, closures",
+            "Develop recovery plans to minimize disruption"
+          ],
+          "page_number": "61"
+        },
+        {
+          "subsection_title": "7.17 Post-Flight Review",
+          "summary": "Following flight completion, dispatch reviews operational performance, fuel performance, weather impacts, delays, and operational deviations. Lessons learned are incorporated into future planning.",
+          "key_points": [
+            "Review performance, fuel, weather, delays, deviations",
+            "Incorporate lessons learned into future planning"
+          ],
+          "page_number": "61"
+        },
+        {
+          "subsection_title": "7.18 Performance Monitoring",
+          "summary": "Dispatch performance is monitored through on-time performance, fuel efficiency, diversion rates, delay statistics, regulatory compliance, and operational safety indicators.",
+          "key_points": [
+            "Track on-time, fuel efficiency, diversion, delays, compliance, safety"
+          ],
+          "page_number": "61"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 8 \u2013 Operations Control Center (OCC) Operations",
+      "section_summary": "This section defines the OCC's role as the central command and coordination facility responsible for maintaining operational awareness, real-time monitoring, decision-making, communication, disruption management, and operational recovery across the airline network.",
+      "page_number": "62-63",
+      "subsections": [
+        {
+          "subsection_title": "8.1 Purpose",
+          "summary": "The Operations Control Center (OCC) serves as the central command and coordination facility responsible for maintaining operational awareness and ensuring the safe, efficient, and continuous execution of airline operations. It provides real-time monitoring, decision-making, communication, disruption management, and operational recovery support.",
+          "key_points": [
+            "Central command and coordination facility for airline operations",
+            "Provides real-time monitoring, decision-making, and communication",
+            "Manages disruptions and supports operational recovery"
+          ],
+          "page_number": "62"
+        },
+        {
+          "subsection_title": "8.2 Scope",
+          "summary": "The OCC is responsible for flight monitoring, network monitoring, operational recovery, resource coordination, crew coordination, aircraft utilization, disruption management, and emergency coordination, maintaining oversight of all active airline operations.",
+          "key_points": [
+            "Covers flight, network, resources, crew, aircraft, disruption, emergency coordination",
+            "Maintains oversight of all active operations"
+          ],
+          "page_number": "62"
+        },
+        {
+          "subsection_title": "8.3 OCC Organizational Structure",
+          "summary": "The OCC may consist of an OCC Manager, Flight Operations Coordinators, Dispatch Personnel, Crew Controllers, Maintenance Controllers, Network Controllers, and Operational Support Specialists. Each role contributes to operational continuity and situational awareness.",
+          "key_points": [
+            "Includes Manager, Coordinators, Dispatchers, Crew/Maintenance/Network Controllers, Support Specialists",
+            "Each role supports operational continuity and situational awareness"
+          ],
+          "page_number": "63"
+        },
+        {
+          "subsection_title": "8.4 Operational Monitoring",
+          "summary": "The OCC continuously monitors aircraft locations, flight status, airport conditions, weather, crew status, maintenance status, passenger disruptions, and security concerns. Operational information is updated in real time whenever possible.",
+          "key_points": [
+            "Monitor aircraft, flight, airport, weather, crew, maintenance, passenger, security",
+            "Update operational information in real time"
+          ],
+          "page_number": "63"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 11 - Maintenance Coordination (continued)",
+      "section_summary": "The final subsections of Maintenance Coordination address defect evaluation, maintenance planning, control, deferred defect management, aircraft release to service, technical communications, unscheduled maintenance events, and performance monitoring.",
+      "page_number": "78",
+      "subsections": [
+        {
+          "subsection_title": "11.5 Defect Evaluation",
+          "summary": "Reported defects are assessed for safety impact, operational impact, repair requirements, and dispatch limitations. Defects affecting airworthiness must be addressed before further operation.",
+          "key_points": [
+            "Defects must be assessed for safety and operational impact",
+            "Repair requirements and dispatch limitations must be determined",
+            "Airworthiness-affecting defects must be addressed before further operation"
+          ],
+          "page_number": "78"
+        },
+        {
+          "subsection_title": "11.6 Maintenance Planning",
+          "summary": "Maintenance planning ensures required work is completed within approved intervals, including scheduled maintenance, inspections, component replacements, and engineering modifications.",
+          "key_points": [
+            "Planning covers scheduled maintenance, inspections, component replacements, and engineering modifications",
+            "Schedules must be coordinated with operational requirements"
+          ],
+          "page_number": "78"
+        },
+        {
+          "subsection_title": "11.7 Maintenance Control",
+          "summary": "Maintenance Control monitors fleet airworthiness, defect status, maintenance progress, and aircraft availability, and communicates significant technical issues to operational stakeholders.",
+          "key_points": [
+            "Monitors fleet airworthiness, defect status, maintenance progress, and aircraft availability",
+            "Communicates significant technical issues to operational stakeholders"
+          ],
+          "page_number": "78"
+        },
+        {
+          "subsection_title": "11.8 Deferred Defect Management",
+          "summary": "Certain defects may be deferred in accordance with approved procedures, provided they are documented, monitored, comply with approved limitations, and are corrected within required timelines.",
+          "key_points": [
+            "Deferred defects must be documented and monitored",
+            "Must comply with approved limitations and corrected within required timelines"
+          ],
+          "page_number": "79"
+        },
+        {
+          "subsection_title": "11.9 Aircraft Release to Service",
+          "summary": "Before aircraft release, maintenance personnel verify required maintenance completion, documentation accuracy, airworthiness status, and operational suitability. Release authority is exercised only by authorized personnel.",
+          "key_points": [
+            "Verifies maintenance completion, documentation accuracy, airworthiness status, and operational suitability",
+            "Release authority is limited to authorized personnel"
+          ],
+          "page_number": "79"
+        },
+        {
+          "subsection_title": "11.10 Technical Communications",
+          "summary": "Maintenance personnel maintain communication with flight crews, OCC personnel, dispatch personnel, and engineering personnel to support safe operational decision-making.",
+          "key_points": [
+            "Communication maintained with flight crews, OCC, dispatch, and engineering personnel",
+            "Timely communication supports safe operational decision-making"
+          ],
+          "page_number": "79"
+        },
+        {
+          "subsection_title": "11.11 Unscheduled Maintenance Events",
+          "summary": "Unscheduled maintenance may result from technical failures, inspection findings, operational reports, or component malfunctions. Operational impacts must be assessed and communicated promptly.",
+          "key_points": [
+            "May result from technical failures, inspection findings, operational reports, or component malfunctions",
+            "Operational impacts must be assessed and communicated promptly"
+          ],
+          "page_number": "80"
+        },
+        {
+          "subsection_title": "11.12 Performance Monitoring",
+          "summary": "Maintenance performance is monitored through aircraft reliability, defect rates, maintenance delays, technical dispatch reliability, and airworthiness compliance to support continuous improvement.",
+          "key_points": [
+            "Monitored through aircraft reliability, defect rates, maintenance delays, technical dispatch reliability, and airworthiness compliance",
+            "Performance data supports continuous improvement initiatives"
+          ],
+          "page_number": "80"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 12 - Security Operations",
+      "section_summary": "Security Operations procedures protect passengers, crew, aircraft, facilities, information systems, cargo, baggage, and operational assets from unlawful interference, security threats, criminal activity, sabotage, terrorism, and unauthorized access.",
+      "page_number": "80",
+      "subsections": [
+        {
+          "subsection_title": "12.1 Purpose",
+          "summary": "The purpose of Security Operations is to protect passengers, crew, aircraft, facilities, information systems, cargo, baggage, and operational assets from unlawful interference, threats, criminal activity, sabotage, terrorism, and unauthorized access. Procedures shall be integrated into all operational activities.",
+          "key_points": [
+            "Protects people, assets, and systems from unlawful interference and threats",
+            "Procedures integrated with airport authorities, law enforcement, regulators, and operational departments"
+          ],
+          "page_number": "81"
+        },
+        {
+          "subsection_title": "12.2 Access Control Procedures",
+          "summary": "Access to operational areas is restricted to authorized personnel who must display valid identification, present airport access credentials, comply with screening requirements, and follow escort requirements when applicable.",
+          "key_points": [
+            "Access restricted to authorized personnel only",
+            "Requires valid ID, credentials, screening, and escort compliance",
+            "Unauthorized individuals shall be denied access and reported"
+          ],
+          "page_number": "81"
+        },
+        {
+          "subsection_title": "12.3 Restricted Area Security",
+          "summary": "Restricted areas include aircraft parking stands, ramp areas, baggage facilities, cargo facilities, maintenance facilities, and OCC facilities. Personnel shall continuously monitor for suspicious activity and unauthorized access.",
+          "key_points": [
+            "Covers aircraft parking, ramps, baggage, cargo, maintenance, and OCC facilities",
+            "Continuous monitoring for suspicious activity, unauthorized access, and unattended items"
+          ],
+          "page_number": "81"
+        },
+        {
+          "subsection_title": "12.4 Aircraft Security Inspections",
+          "summary": "Aircraft security inspections are conducted before first flight, after extended ground periods, following security incidents, or when directed by authorities. Inspections cover cabins, lavatories, galleys, cargo compartments, flight deck, and service compartments.",
+          "key_points": [
+            "Conducted before first flight, after extended ground periods, or following incidents",
+            "Covers cabin, lavatories, galleys, cargo compartments, flight deck, and service compartments",
+            "Suspicious items result in immediate suspension of operations"
+          ],
+          "page_number": "82"
+        },
+        {
+          "subsection_title": "12.5 Suspicious Person Procedure",
+          "summary": "Personnel identifying suspicious individuals should observe behavior, avoid confrontation, notify supervisors and security personnel, and document observations. Indicators include unauthorized access, surveillance, unusual photography, threatening behavior, and identity discrepancies.",
+          "key_points": [
+            "Steps include observation, non-confrontation, notification, and documentation",
+            "Indicators include unauthorized access attempts, surveillance, unusual photography, and identity discrepancies"
+          ],
+          "page_number": "82"
+        },
+        {
+          "subsection_title": "12.6 Unattended Item Procedure",
+          "summary": "Any unattended item shall be treated as potentially hazardous. Personnel shall establish a safety perimeter, prevent public access, notify security, document location and time, and await instructions without touching or moving items.",
+          "key_points": [
+            "All unattended items treated as potentially hazardous",
+            "Personnel must not touch or move suspicious items",
+            "Establish safety perimeter and notify security"
+          ],
+          "page_number": "83"
+        },
+        {
+          "subsection_title": "12.7 Bomb Threat Response",
+          "summary": "Upon receiving a bomb threat, personnel shall remain calm, record information, and notify OCC, airport security, and law enforcement. Operations may be suspended and facilities evacuated pending security assessment.",
+          "key_points": [
+            "Remain calm, record information, notify OCC, airport security, and law enforcement",
+            "Operations may be suspended and facilities evacuated"
+          ],
+          "page_number": "83"
+        },
+        {
+          "subsection_title": "12.8 Passenger Security Incidents",
+          "summary": "Passengers may be denied travel due to threatening behavior, violence, intoxication, security concerns, or identity discrepancies. Security personnel coordinate with operational personnel to ensure safe resolution.",
+          "key_points": [
+            "Denial grounds include threatening behavior, violence, intoxication, security concerns, and identity discrepancies",
+            "Coordination between security and operational personnel required"
+          ],
+          "page_number": "83"
+        },
+        {
+          "subsection_title": "12.9 Security Incident Reporting",
+          "summary": "All security incidents shall be documented with time, location, personnel involved, description, actions taken, and outcome. Reports shall be retained according to regulatory requirements.",
+          "key_points": [
+            "Reports must include time, location, personnel, description, actions, and outcome",
+            "Reports retained per regulatory requirements"
+          ],
+          "page_number": "84"
+        },
+        {
+          "subsection_title": "12.10 Cybersecurity Awareness",
+          "summary": "Personnel shall protect operational systems from unauthorized access through password protection, access controls, system monitoring, and incident reporting. Suspected cybersecurity incidents must be reported immediately.",
+          "key_points": [
+            "Measures include password protection, access controls, system monitoring, and incident reporting",
+            "Suspected incidents reported immediately"
+          ],
+          "page_number": "84"
+        },
+        {
+          "subsection_title": "12.11 Security Audits",
+          "summary": "Security audits evaluate access control effectiveness, security compliance, incident trends, and procedural effectiveness. Corrective actions shall be tracked until completion.",
+          "key_points": [
+            "Evaluates access control, compliance, incident trends, and procedural effectiveness",
+            "Corrective actions tracked until completion"
+          ],
+          "page_number": "84"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 13 - Weather Disruption Management",
+      "section_summary": "Weather Disruption Management procedures ensure safe airline operations during adverse meteorological conditions. All weather-related decisions prioritize safety over schedule performance and address impacts on flight safety, airport operations, aircraft performance, crew scheduling, and network stability.",
+      "page_number": "80",
+      "subsections": [
+        {
+          "subsection_title": "13.1 Purpose",
+          "summary": "The purpose of Weather Disruption Management is to ensure safe airline operations during adverse meteorological conditions. Weather disruptions may affect flight safety, airport operations, aircraft performance, crew scheduling, passenger handling, and network stability.",
+          "key_points": [
+            "Ensures safe operations during adverse weather",
+            "Safety prioritized over schedule performance"
+          ],
+          "page_number": "85"
+        },
+        {
+          "subsection_title": "13.2 Weather Monitoring",
+          "summary": "The OCC continuously monitors departure, destination, alternate, and enroute weather, including tropical systems, thunderstorms, low visibility, and wind conditions throughout operational periods.",
+          "key_points": [
+            "Monitors departure, destination, alternate, and enroute weather",
+            "Covers tropical systems, thunderstorms, low visibility, and wind conditions"
+          ],
+          "page_number": "85"
+        },
+        {
+          "subsection_title": "13.3 Weather Alert Procedures",
+          "summary": "When significant weather is forecast, OCC issues alerts, dispatch reviews affected flights, crew scheduling evaluates impacts, ground operations prepares contingencies, and passenger services prepares communication plans.",
+          "key_points": [
+            "OCC issues operational alerts for forecast significant weather",
+            "Coordinated response across dispatch, crew scheduling, ground ops, and passenger services",
+            "Alerts remain active until operational risk is reduced"
+          ],
+          "page_number": "86"
+        },
+        {
+          "subsection_title": "13.4 Thunderstorm Operations",
+          "summary": "Thunderstorms present risks including lightning, wind shear, turbulence, heavy rainfall, reduced visibility, and hail. Operations may be modified, restricted, or delayed, with safety overriding schedule performance.",
+          "key_points": [
+            "Risks include lightning, wind shear, turbulence, heavy rain, reduced visibility, and hail",
+            "Aircraft routing, ground operations, fuel planning, and departures may be adjusted",
+            "Safety considerations override schedule performance"
+          ],
+          "page_number": "86"
+        },
+        {
+          "subsection_title": "13.5 Lightning Procedures",
+          "summary": "When lightning is detected within airport safety limits, ramp operations suspend, fueling ceases, aircraft loading stops, and personnel move to designated shelters. Operations resume only after clearance from authorities.",
+          "key_points": [
+            "Ramp operations, fueling, and aircraft loading suspended",
+            "Personnel move to designated shelters",
+            "Operations resume only after clearance from airport authorities"
+          ],
+          "page_number": "87"
+        },
+        {
+          "subsection_title": "13.6 Low Visibility Operations",
+          "summary": "Low visibility from fog, heavy rain, smoke, dust, or haze may require additional spacing, taxi restrictions, increased delays, and diversions. Flight crews receive continuous visibility updates.",
+          "key_points": [
+            "Causes include fog, heavy rain, smoke, dust, and haze",
+            "May require additional spacing, taxi restrictions, delays, or diversions",
+            "Flight crews provided with continuous visibility updates"
+          ],
+          "page_number": "87"
+        },
+        {
+          "subsection_title": "13.7 High Wind Operations",
+          "summary": "Strong winds affect aircraft performance, ground equipment, passenger boarding, and aircraft parking. Personnel shall secure loose equipment and monitor hazards. Aircraft exceeding crosswind limits shall not be dispatched.",
+          "key_points": [
+            "Affects aircraft performance, equipment, boarding, and parking",
+            "Personnel must secure loose equipment and monitor hazards",
+            "Aircraft exceeding crosswind limits shall not be dispatched"
+          ],
+          "page_number": "87"
+        },
+        {
+          "subsection_title": "13.8 Tropical Storm and Cyclone Response",
+          "summary": "When tropical systems threaten operational areas, OCC activates disruption planning, aircraft repositioning may be initiated, flight schedules modified, airport closures monitored, and passenger recovery plans prepared.",
+          "key_points": [
+            "OCC activates disruption planning",
+            "Aircraft repositioning, schedule modifications, and passenger recovery plans prepared",
+            "Aircraft shall not be exposed to unacceptable storm risk"
+          ],
+          "page_number": "88"
+        },
+        {
+          "subsection_title": "13.9 Snow and Ice Operations",
+          "summary": "Snow or ice conditions require deicing assessment, runway monitoring, ground movement restrictions, and additional delays. No aircraft shall depart with contamination exceeding approved limits.",
+          "key_points": [
+            "Aircraft deicing requirements assessed",
+            "Runway conditions monitored and ground movement may be restricted",
+            "No departure permitted with contamination exceeding approved limits"
+          ],
+          "page_number": "88"
+        },
+        {
+          "subsection_title": "13.10 Weather Diversion Procedures",
+          "summary": "Diversion may be required when destination weather falls below minima, runways become unavailable, or safety margins are reduced. Dispatch identifies alternates while OCC coordinates support and passenger services prepares recovery.",
+          "key_points": [
+            "Triggers include destination weather below minima, runway unavailability, or reduced safety margins",
+            "Dispatch identifies alternates, OCC coordinates support, ground handling arranged"
+          ],
+          "page_number": "88"
+        },
+        {
+          "subsection_title": "13.11 Airport Closure Response",
+          "summary": "If an airport becomes unavailable, affected flights are evaluated, diversion plans activated, passenger notifications begin, and crew recovery planning commences.",
+          "key_points": [
+            "Affected flights evaluated and diversion plans activated",
+            "Passenger notifications and crew recovery planning commence",
+            "Operational recovery begins immediately"
+          ],
+          "page_number": "89"
+        },
+        {
+          "subsection_title": "13.12 Post-Weather Recovery",
+          "summary": "Following severe weather, aircraft inspections may be required, schedule and passenger recovery plans activated, and operational performance reviewed. Lessons learned are incorporated into future planning.",
+          "key_points": [
+            "Aircraft inspections may be required",
+            "Schedule and passenger recovery plans activated",
+            "Lessons learned incorporated into future planning"
+          ],
+          "page_number": "89"
+        },
+        {
+          "subsection_title": "13.13 Performance Review",
+          "summary": "Weather disruption performance is evaluated through delay statistics, diversion rates, passenger recovery times, operational recovery effectiveness, and safety performance indicators.",
+          "key_points": [
+            "Evaluated through delay statistics, diversion rates, and passenger recovery times",
+            "Includes operational recovery effectiveness and safety performance indicators"
+          ],
+          "page_number": "89"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 14 - Delay, Diversion & Cancellation Management",
+      "section_summary": "This section addresses Irregular Operations (IROPS) management, including flight delays, diversions, and cancellations. The purpose is to minimize operational disruption, maintain safety, support passengers, and facilitate rapid recovery.",
+      "page_number": "90",
+      "subsections": [
+        {
+          "subsection_title": "14.1 Purpose",
+          "summary": "The purpose of Delay, Diversion, and Cancellation Management is to minimize operational disruption, maintain safety, support passengers, protect operational continuity, and facilitate rapid recovery following irregular operational events.",
+          "key_points": [
+            "Minimizes operational disruption while maintaining safety",
+            "Supports passengers and protects operational continuity",
+            "Facilitates rapid recovery from irregular events"
+          ],
+          "page_number": "90"
+        },
+        {
+          "subsection_title": "14.2 Irregular Operations Definition",
+          "summary": "Irregular Operations (IROPS) include flight delays, flight diversions, and flight cancellations.",
+          "key_points": [
+            "IROPS include flight delays, diversions, and cancellations"
+          ],
+          "page_number": "90"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 14 \u2013 Delay, Diversion & Cancellation Management",
+      "section_summary": "Establishes procedures for managing irregular operations (IROPS) including delay classification, passenger communication, diversions, cancellations, and recovery operations. All IROPS events are coordinated through the Operations Control Center (OCC) with safety as the overriding priority.",
+      "page_number": "91",
+      "subsections": [
+        {
+          "subsection_title": "14.3 Delay Classification",
+          "summary": "Categorizes delays into Weather, Technical, Crew, Airport, and Security types, each with specific causes.",
+          "key_points": [
+            "Weather Delays: thunderstorms, fog, snow, strong winds",
+            "Technical Delays: aircraft defects, maintenance, equipment failures",
+            "Crew Delays: duty limitations, crew shortages, positioning issues",
+            "Airport Delays: congestion, gate availability, infrastructure issues",
+            "Security Delays: security incidents, screening requirements, law enforcement activity"
+          ],
+          "page_number": "91"
+        },
+        {
+          "subsection_title": "14.4 Delay Response Procedures",
+          "summary": "Defines the sequential steps to be taken upon identification of a significant delay.",
+          "key_points": [
+            "OCC determines cause of delay",
+            "Impact assessment is completed",
+            "Passenger communications begin",
+            "Recovery options are evaluated",
+            "Operational updates continue until resolution"
+          ],
+          "page_number": "92"
+        },
+        {
+          "subsection_title": "14.5 Passenger Communication Procedures",
+          "summary": "Outlines requirements for communicating delay information to passengers, emphasizing accuracy and timeliness.",
+          "key_points": [
+            "Passengers must receive accurate information and timely updates",
+            "Expected departure estimates must be provided",
+            "Recovery options must be communicated",
+            "Information must not be speculative or misleading"
+          ],
+          "page_number": "92"
+        },
+        {
+          "subsection_title": "14.6 Passenger Recovery Procedures",
+          "summary": "Describes recovery measures to minimize passenger disruption following irregular operations.",
+          "key_points": [
+            "Recovery measures include rebooking, alternate routing, accommodation, meal vouchers, and transportation support",
+            "Priority is given to minimizing passenger disruption"
+          ],
+          "page_number": "92"
+        },
+        {
+          "subsection_title": "14.7 Diversion Management",
+          "summary": "Identifies causes of flight diversions and establishes that diversion decisions prioritize safety.",
+          "key_points": [
+            "Diversion causes: weather, medical emergencies, security incidents, technical concerns, airport closures",
+            "Diversion decisions shall prioritize safety"
+          ],
+          "page_number": "93"
+        },
+        {
+          "subsection_title": "14.8 Diversion Response Procedures",
+          "summary": "Defines the sequential response steps following a flight diversion.",
+          "key_points": [
+            "Ground support shall be arranged",
+            "Passenger handling plans shall be activated",
+            "Fuel requirements shall be evaluated",
+            "Crew limitations shall be reviewed",
+            "Recovery planning shall begin"
+          ],
+          "page_number": "93"
+        },
+        {
+          "subsection_title": "14.9 Cancellation Authority",
+          "summary": "Establishes that flight cancellations may only be approved by authorized personnel, with safety as the primary consideration.",
+          "key_points": [
+            "Cancellations may only be approved by authorized personnel",
+            "Decisions consider safety, operational feasibility, resource availability, and passenger impact",
+            "Safety considerations shall always take precedence"
+          ],
+          "page_number": "93"
+        },
+        {
+          "subsection_title": "14.10 Cancellation Response Procedures",
+          "summary": "Outlines sequential steps to be taken upon flight cancellation.",
+          "key_points": [
+            "Passenger notifications shall begin",
+            "Rebooking activities shall commence",
+            "Crew assignments shall be reviewed",
+            "Aircraft recovery plans shall be activated",
+            "Resource reallocation shall occur"
+          ],
+          "page_number": "94"
+        },
+        {
+          "subsection_title": "14.11 Aircraft Recovery",
+          "summary": "Describes aircraft recovery activities aimed at restoring network stability.",
+          "key_points": [
+            "Recovery includes aircraft substitutions, schedule modifications, repositioning flights, and maintenance adjustments",
+            "Recovery efforts shall prioritize restoration of network stability"
+          ],
+          "page_number": "94"
+        },
+        {
+          "subsection_title": "14.12 Crew Recovery",
+          "summary": "Outlines crew recovery activities while maintaining compliance with duty regulations.",
+          "key_points": [
+            "Activities include reassignments, reserve crew activation, positioning arrangements, and schedule adjustments",
+            "All actions shall remain compliant with duty regulations"
+          ],
+          "page_number": "94"
+        },
+        {
+          "subsection_title": "14.13 Network Recovery",
+          "summary": "Defines network recovery planning considerations with the objective of restoring normal operations safely.",
+          "key_points": [
+            "Considers fleet availability, crew availability, airport capacity, passenger demand, and operational priorities",
+            "Objective is restoration of normal operations as quickly as safely possible"
+          ],
+          "page_number": "95"
+        },
+        {
+          "subsection_title": "14.14 Customer Service Recovery",
+          "summary": "Describes customer service recovery measures with passenger welfare as a primary consideration.",
+          "key_points": [
+            "Measures include travel credits, refunds, accommodation, meal assistance, and ground transportation",
+            "Passenger welfare shall remain a primary consideration"
+          ],
+          "page_number": "95"
+        },
+        {
+          "subsection_title": "14.15 Documentation Requirements",
+          "summary": "Establishes documentation requirements for all irregular operations events.",
+          "key_points": [
+            "All IROPS events shall be documented",
+            "Reports shall include cause, duration, operational impact, recovery actions, and passenger impact"
+          ],
+          "page_number": "95"
+        },
+        {
+          "subsection_title": "14.16 Post-Event Review",
+          "summary": "Outlines post-event review processes to support continuous improvement following significant disruptions.",
+          "key_points": [
+            "Root causes shall be identified",
+            "Operational performance shall be reviewed",
+            "Corrective actions shall be developed",
+            "Lessons learned shall be documented",
+            "Continuous improvement opportunities shall be incorporated into future operations"
+          ],
+          "page_number": "96"
+        },
+        {
+          "subsection_title": "14.17 Performance Monitoring",
+          "summary": "Defines key performance indicators for monitoring irregular operations performance.",
+          "key_points": [
+            "Indicators include delay minutes, cancellation rates, diversion rates, passenger recovery times, and operational recovery effectiveness",
+            "Performance trends shall be reviewed regularly"
+          ],
+          "page_number": "96"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 15 \u2013 Emergency Response Procedures",
+      "section_summary": "Establishes a coordinated framework for responding to emergencies affecting passengers, crew, aircraft, facilities, personnel, or operations. Priorities include preservation of life, protection of property, operational continuity, regulatory compliance, and effective communication. References ICAO, FAA, and airport emergency planning standards.",
+      "page_number": "96",
+      "subsections": [
+        {
+          "subsection_title": "15.1 Purpose",
+          "summary": "Defines the purpose of Emergency Response Procedures as establishing a coordinated framework for emergency response.",
+          "key_points": [
+            "Prioritizes preservation of life, protection of property, operational continuity, regulatory compliance, and effective communication"
+          ],
+          "page_number": "96"
+        },
+        {
+          "subsection_title": "15.2 Emergency Classification",
+          "summary": "Identifies types of emergencies and establishes classification by severity and operational impact.",
+          "key_points": [
+            "Emergencies include aircraft accidents, incidents, medical emergencies, fire, security incidents, natural disasters, hazardous material incidents, and airport evacuations",
+            "All emergencies shall be classified according to severity and operational impact"
+          ],
+          "page_number": "96"
+        },
+        {
+          "subsection_title": "15.3 Emergency Notification Procedures",
+          "summary": "Defines the notification sequence and required information upon identification of an emergency.",
+          "key_points": [
+            "Notify OCC, emergency services, airport authorities, and senior management",
+            "Activate emergency response procedures",
+            "Notifications must include nature, location, time, personnel involved, and immediate hazards"
+          ],
+          "page_number": "97"
+        },
+        {
+          "subsection_title": "15.4 Emergency Operations Center Activation",
+          "summary": "Describes activation and coordination functions of the Emergency Operations Center (EOC).",
+          "key_points": [
+            "EOC may be activated during significant events",
+            "EOC coordinates operational response, resource allocation, stakeholder communication, regulatory coordination, and recovery activities",
+            "EOC shall remain active until emergency conditions are resolved"
+          ],
+          "page_number": "98"
+        },
+        {
+          "subsection_title": "15.5 Aircraft Accident Response",
+          "summary": "Outlines response procedures in the event of an aircraft accident.",
+          "key_points": [
+            "Activate emergency response plan and coordinate with emergency services",
+            "Establish communication channels and support rescue operations",
+            "Preserve evidence and support investigators",
+            "Only authorized personnel may release information regarding the accident"
+          ],
+          "page_number": "98"
+        },
+        {
+          "subsection_title": "15.6 Aircraft Incident Response",
+          "summary": "Describes response to aircraft incidents that do not constitute full accidents.",
+          "key_points": [
+            "Incidents include engine failures, emergency landings, system failures, ground collisions, and runway excursions",
+            "OCC shall coordinate response activities and provide operational support until resolved"
+          ],
+          "page_number": "99"
+        },
+        {
+          "subsection_title": "15.7 Medical Emergency Procedures",
+          "summary": "Establishes medical emergency procedures treating them as priority events.",
+          "key_points": [
+            "Contact medical assistance and assess immediate risks",
+            "Coordinate emergency services and document actions taken",
+            "Medical confidentiality shall be maintained whenever possible"
+          ],
+          "page_number": "99"
+        },
+        {
+          "subsection_title": "15.8 Fire Emergency Procedures",
+          "summary": "Outlines response procedures for various fire emergencies.",
+          "key_points": [
+            "Fire types: aircraft, terminal, ground equipment, and fuel-related fires",
+            "Raise alarm, notify emergency services, evacuate affected areas, and isolate hazards if safe",
+            "Personnel shall not place themselves at unnecessary risk"
+          ],
+          "page_number": "99"
+        },
+        {
+          "subsection_title": "15.9 Bomb Threat Response",
+          "summary": "Defines response procedures for bomb threats.",
+          "key_points": [
+            "Record all available information and notify security personnel, OCC, and law enforcement",
+            "Follow evacuation instructions if required",
+            "Threats shall be treated seriously until assessed by competent authorities"
+          ],
+          "page_number": "100"
+        },
+        {
+          "subsection_title": "15.10 Airport Evacuation Procedures",
+          "summary": "Outlines evacuation requirements and accountability procedures.",
+          "key_points": [
+            "Evacuation may be required due to fire, security threats, structural hazards, hazardous materials, or natural disasters",
+            "Personnel shall guide passengers and staff to designated assembly areas",
+            "Accountability procedures shall be initiated immediately following evacuation"
+          ],
+          "page_number": "100"
+        },
+        {
+          "subsection_title": "15.11 Family Assistance",
+          "summary": "Describes family assistance activities following major emergencies.",
+          "key_points": [
+            "Activities include information centers, passenger status support, counseling support, and transportation assistance",
+            "Coordinated through designated response teams"
+          ],
+          "page_number": "100"
+        },
+        {
+          "subsection_title": "15.12 Media Communications",
+          "summary": "Establishes restrictions on media communications during emergencies.",
+          "key_points": [
+            "Only authorized spokespersons may communicate with media organizations",
+            "Personnel shall not release passenger/crew information, investigation findings, or unverified information",
+            "Media communications shall be coordinated through approved channels"
+          ],
+          "page_number": "101"
+        },
+        {
+          "subsection_title": "15.13 Business Continuity",
+          "summary": "Addresses maintenance of critical functions during emergencies.",
+          "key_points": [
+            "Critical functions shall be maintained whenever possible",
+            "Planning addresses operational control, communication systems, personnel availability, and facility disruptions",
+            "Recovery activities shall begin as soon as conditions permit"
+          ],
+          "page_number": "101"
+        },
+        {
+          "subsection_title": "15.14 Post-Emergency Review",
+          "summary": "Outlines post-emergency review processes to support continuous improvement.",
+          "key_points": [
+            "Investigations shall be conducted and lessons learned documented",
+            "Corrective actions shall be developed and emergency plans updated",
+            "Performance reviews shall support continuous improvement"
+          ],
+          "page_number": "101"
+        },
+        {
+          "subsection_title": "15.15 Training and Exercises",
+          "summary": "Establishes requirements for periodic testing of emergency response plans.",
+          "key_points": [
+            "Plans tested through tabletop exercises, functional exercises, and full-scale drills",
+            "Results shall be documented and reviewed"
+          ],
+          "page_number": "102"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 16 \u2013 Dangerous Goods Management",
+      "section_summary": "Establishes procedures for the safe acceptance, handling, storage, transportation, loading, and reporting of hazardous materials transported by air. References ICAO Technical Instructions, IATA Dangerous Goods Regulations, and FAA Hazardous Materials Guidance. All activities must comply with applicable regulatory requirements and safety standards.",
+      "page_number": "102",
+      "subsections": [
+        {
+          "subsection_title": "16.1 Purpose",
+          "summary": "Defines the purpose of Dangerous Goods Management as ensuring safe handling of hazardous materials transported by air in compliance with regulatory requirements.",
+          "key_points": [
+            "Covers acceptance, handling, storage, transportation, loading, and reporting of hazardous materials",
+            "Activities shall comply with all applicable regulatory requirements and safety standards"
+          ],
+          "page_number": "102"
+        },
+        {
+          "subsection_title": "16.2 Dangerous Goods Classification",
+          "summary": "Identifies the nine classes of dangerous goods as defined by international regulations.",
+          "key_points": [
+            "Class 1: Explosives",
+            "Class 2: Gases",
+            "Class 3: Flammable Liquids",
+            "Class 4: Flammable Solids",
+            "Class 5: Oxidizing Substances",
+            "Class 6: Toxic and Infectious Substances",
+            "Class 7: Radioactive Materials",
+            "Class 8: Corrosive Materials",
+            "Class 9: Miscellaneous Dangerous Goods",
+            "Personnel shall be familiar with applicable classifications"
+          ],
+          "page_number": "102"
+        },
+        {
+          "subsection_title": "16.3 Acceptance Procedures",
+          "summary": "Establishes conditions under which dangerous goods may be accepted for air transport.",
+          "key_points": [
+            "Goods must be properly declared, packaged, labeled, and documented",
+            "Goods must be authorized for air transport",
+            "Non-compliant shipments shall be rejected"
+          ],
+          "page_number": "103"
+        },
+        {
+          "subsection_title": "16.4 Documentation Requirements",
+          "summary": "Identifies required documentation for dangerous goods shipments.",
+          "key_points": [
+            "Documentation includes shipper declarations, transport documentation, emergency response information, and regulatory approvals",
+            "Documentation shall be verified before shipment acceptance"
+          ],
+          "page_number": "103"
+        },
+        {
+          "subsection_title": "16.5 Packaging Requirements",
+          "summary": "Establishes packaging standards for dangerous goods shipments.",
+          "key_points": [
+            "Packaging must meet regulatory standards and prevent leakage",
+            "Must protect contents and withstand transportation conditions",
+            "Damaged packaging shall not be accepted"
+          ],
+          "page_number": "104"
+        },
+        {
+          "subsection_title": "16.6 Labeling Requirements",
+          "summary": "Defines labeling requirements for dangerous goods shipments.",
+          "key_points": [
+            "Shipments shall display hazard labels, handling labels, identification markings, and regulatory markings",
+            "Incorrect labeling shall be corrected before transport"
+          ],
+          "page_number": "104"
+        },
+        {
+          "subsection_title": "16.7 Storage Procedures",
+          "summary": "Establishes requirements for dangerous goods storage areas.",
+          "key_points": [
+            "Storage areas shall be secured, clearly identified, and maintain required segregation",
+            "Areas shall prevent unauthorized access",
+            "Incompatible materials shall not be stored together"
+          ],
+          "page_number": "104"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 16 \u2013 Dangerous Goods Management (Continued)",
+      "section_summary": "This portion of Section 16 covers loading procedures, lithium battery handling, incident response, emergency response, reporting requirements, training requirements, and compliance monitoring for dangerous goods operations.",
+      "page_number": "105-106",
+      "subsections": [
+        {
+          "subsection_title": "16.8 Loading Procedures",
+          "summary": "Establishes requirements for safe loading of dangerous goods on aircraft.",
+          "key_points": [
+            "Loading must comply with aircraft limitations, segregation requirements, quantity restrictions, and safety requirements",
+            "Loading personnel must follow approved loading instructions"
+          ],
+          "page_number": "105"
+        },
+        {
+          "subsection_title": "16.9 Lithium Battery Procedures",
+          "summary": "Defines verification and acceptance requirements for lithium batteries, which represent a significant transportation risk.",
+          "key_points": [
+            "Personnel must verify packaging requirements, quantity limitations, documentation requirements, and regulatory compliance",
+            "Damaged batteries shall not be accepted"
+          ],
+          "page_number": "105"
+        },
+        {
+          "subsection_title": "16.10 Dangerous Goods Incidents",
+          "summary": "Identifies types of dangerous goods incidents and notification requirements.",
+          "key_points": [
+            "Incidents may include leaks, spills, packaging failures, and undeclared dangerous goods",
+            "Personnel must immediately notify supervisors and safety personnel"
+          ],
+          "page_number": "105"
+        },
+        {
+          "subsection_title": "16.11 Emergency Response",
+          "summary": "Outlines the step-by-step response procedure for dangerous goods incidents.",
+          "key_points": [
+            "Response steps: isolate the area, notify emergency responders, protect personnel, follow emergency guidance, and document the event",
+            "Personnel safety is the highest priority"
+          ],
+          "page_number": "105-106"
+        },
+        {
+          "subsection_title": "16.12 Reporting Requirements",
+          "summary": "Defines reporting standards for dangerous goods incidents.",
+          "key_points": [
+            "Reports must comply with regulatory requirements, company policy, and airport requirements",
+            "Reports must include complete details of the event"
+          ],
+          "page_number": "106"
+        },
+        {
+          "subsection_title": "16.13 Training Requirements",
+          "summary": "Specifies training obligations for personnel involved with dangerous goods.",
+          "key_points": [
+            "Personnel must receive initial training, recurrent training, and emergency response training",
+            "Training records must be maintained and monitored"
+          ],
+          "page_number": "106"
+        },
+        {
+          "subsection_title": "16.14 Compliance Monitoring",
+          "summary": "Defines methods for monitoring dangerous goods compliance.",
+          "key_points": [
+            "Compliance monitoring includes audits, inspections, incident reviews, and performance assessments",
+            "Corrective actions must be implemented when deficiencies are identified"
+          ],
+          "page_number": "106"
+        }
+      ]
+    },
+    {
+      "section_title": "Section 17 \u2013 Training, Quality Assurance & Compliance",
+      "section_summary": "Establishes the framework for training governance, competency assessment, quality assurance, regulatory compliance, corrective actions, and continuous improvement to ensure personnel possess the knowledge, skills, and qualifications required for safe and compliant operations.",
+      "page_number": "107-111",
+      "subsections": [
+        {
+          "subsection_title": "17.1 Purpose",
+          "summary": "Defines the purpose of the Training, Quality Assurance, and Compliance program.",
+          "key_points": [
+            "Ensures personnel possess the knowledge, skills, qualifications, and competencies required to perform assigned duties safely and effectively",
+            "Maintains compliance with regulatory requirements and company standards"
+          ],
+          "page_number": "107"
+        },
+        {
+          "subsection_title": "17.2 Training Governance",
+          "summary": "Establishes that the Training Department shall maintain training programs for all operational personnel.",
+          "key_points": [
+            "Programs must address initial qualification and recurrent qualification",
+            "Programs must address regulatory requirements, operational procedures, and safety requirements"
+          ],
+          "page_number": "107-108"
+        },
+        {
+          "subsection_title": "17.3 Initial Training",
+          "summary": "Requires new personnel to complete initial training before performing operational duties.",
+          "key_points": [
+            "Training may include company orientation, operational procedures, safety requirements, security requirements, and emergency procedures",
+            "Successful completion must be documented"
+          ],
+          "page_number": "108"
+        },
+        {
+          "subsection_title": "17.4 Recurrent Training",
+          "summary": "Mandates recurrent training at established intervals to maintain competency.",
+          "key_points": [
+            "Ensures knowledge retention, procedural compliance, regulatory compliance, and competency maintenance",
+            "Personnel failing recurrent training shall be removed from operational duties until compliance is restored"
+          ],
+          "page_number": "108"
+        },
+        {
+          "subsection_title": "17.5 Competency Assessment",
+          "summary": "Defines the methods used to assess personnel competency.",
+          "key_points": [
+            "Assessments may include written examinations, practical evaluations, operational observations, and simulations",
+            "Assessment results must be documented and retained"
+          ],
+          "page_number": "108-109"
+        },
+        {
+          "subsection_title": "17.6 Training Records",
+          "summary": "Specifies the information that must be included in training records.",
+          "key_points": [
+            "Records must include course completion dates, qualifications, certifications, assessment results, and expiration dates",
+            "Records must be maintained securely and accurately"
+          ],
+          "page_number": "109"
+        },
+        {
+          "subsection_title": "17.7 Quality Assurance Program",
+          "summary": "Defines the scope of the Quality Assurance Program and its role in continuous improvement.",
+          "key_points": [
+            "Program monitors operational compliance, procedural effectiveness, training effectiveness, and regulatory compliance",
+            "Quality assurance activities support continuous improvement"
+          ],
+          "page_number": "109"
+        },
+        {
+          "subsection_title": "17.8 Internal Audits",
+          "summary": "Establishes the purpose and scope of internal audits.",
+          "key_points": [
+            "Audits evaluate compliance with company procedures, regulatory requirements, safety requirements, and security requirements",
+            "Audit findings must be documented and tracked"
+          ],
+          "page_number": "109-110"
+        },
+        {
+          "subsection_title": "17.9 Regulatory Compliance",
+          "summary": "Outlines areas of regulatory compliance that must be monitored.",
+          "key_points": [
+            "Compliance monitoring covers aviation regulations, airport requirements, security requirements, and safety requirements",
+            "Non-compliance issues must be addressed promptly"
+          ],
+          "page_number": "110"
+        },
+        {
+          "subsection_title": "17.10 Corrective Action Management",
+          "summary": "Defines how corrective actions are developed and tracked.",
+          "key_points": [
+            "Corrective actions must be developed for audit findings, incident investigations, compliance deficiencies, and operational concerns",
+            "Corrective actions must remain open until verified as effective"
+          ],
+          "page_number": "110"
+        },
+        {
+          "subsection_title": "17.11 Document Control",
+          "summary": "Establishes requirements for management of operational documents.",
+          "key_points": [
+            "Documents must be version controlled, reviewed periodically, approved before release, and distributed appropriately",
+            "Personnel must use only current approved documents"
+          ],
+          "page_number": "110"
+        },
+        {
+          "subsection_title": "17.12 Lessons Learned Program",
+          "summary": "Defines the process for collecting and applying lessons learned.",
+          "key_points": [
+            "Lessons learned shall be collected from incidents, audits, operational reviews, and emergency events",
+            "Findings shall be incorporated into training and procedures"
+          ],
+          "page_number": "110-111"
+        },
+        {
+          "subsection_title": "17.13 Performance Monitoring",
+          "summary": "Establishes metrics and review processes for monitoring training and compliance performance.",
+          "key_points": [
+            "Monitoring includes training completion rates, audit results, compliance metrics, qualification status, and corrective action effectiveness",
+            "Performance trends shall be reviewed regularly"
+          ],
+          "page_number": "111"
+        },
+        {
+          "subsection_title": "17.14 Continuous Improvement",
+          "summary": "Defines the organization's commitment to ongoing improvement.",
+          "key_points": [
+            "Improvement activities include training enhancements, audit programs, safety reviews, operational feedback, and regulatory updates",
+            "Continuous improvement activities support safety, compliance, and operational excellence"
+          ],
+          "page_number": "111"
+        }
+      ]
+    }
+  ]
+}

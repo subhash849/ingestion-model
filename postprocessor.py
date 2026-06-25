@@ -103,8 +103,10 @@ def normalize_entry(entry: dict, valid_categories: list[str]) -> dict:
     defn     = entry["definition"].strip()
     raw_cat  = entry.get("category", "").strip().lower()
     category = _best_category_match(raw_cat, valid_categories)
+    page_number = entry.get("page_number")
+    chunk_number = entry.get("chunk_number")
 
-    return {"term": term, "definition": defn, "category": category}
+    return {"term": term, "definition": defn, "category": category, "page_number": page_number, "chunk_number": chunk_number}
 
 
 # ---------------------------------------------------------------------------

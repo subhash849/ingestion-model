@@ -25,6 +25,8 @@ class GlossaryEntry(BaseModel):
     term:       str
     definition: str
     category:   str
+    page_number: str | None = None
+    chunk_number: int | None = None
 
     @field_validator("term")
     @classmethod

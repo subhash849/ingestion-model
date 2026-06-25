@@ -61,7 +61,7 @@ def extract_text_from_pdf(path: str | Path) -> tuple[str, str | None]:
                         ocr_text = pytesseract.image_to_string(page_image)
                         
                         if len(ocr_text.strip()) >= _MIN_CHARS_PER_PAGE:
-                            pages_text.append(ocr_text)
+                            pages_text.append(f"[Page {i+1}]\n{ocr_text}")
                             logger.debug("Successfully extracted text from page %d via OCR.", i + 1)
                         else:
                             scanned_pages += 1
@@ -72,7 +72,7 @@ def extract_text_from_pdf(path: str | Path) -> tuple[str, str | None]:
                         logger.warning("OCR failed on page %d: %s", i + 1, e)
                         scanned_pages += 1
                 else:
-                    pages_text.append(text)
+                    pages_text.append(f"[Page {i+1}]\n{text}")
 
             total_pages = len(pdf.pages)
 

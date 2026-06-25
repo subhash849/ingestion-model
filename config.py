@@ -19,7 +19,7 @@ GROQ_MODEL    = "llama-3.1-8b-instant"
 
 # Ollama Config
 OLLAMA_HOST   = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-OLLAMA_MODEL  = os.environ.get("OLLAMA_MODEL", "phi4-mini:latest")
+OLLAMA_MODEL  = os.environ.get("OLLAMA_MODEL", "minimax-m3:cloud")
 
 MAX_TOKENS    = 2048
 
